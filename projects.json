@@ -1,5 +1,75 @@
 [
   {
+    "slug": "sevrin",
+    "name": "Sevrin",
+    "one_liner": "Confidential token-allocation infrastructure: public aggregate lockups, private beneficiary ownership, and STRK20-settled claims.",
+    "category": "Infra",
+    "repo_url": "https://github.com/velikanghost/sevrin",
+    "demo_url": "https://sevrin-orcin.vercel.app",
+    "demo_video": "",
+    "x_handle": "velkan_gst",
+    "inspired_by": "IDEA-17",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "",
+    "contracts": [],
+    "transactions": [],
+    "verified_txs": 0,
+    "requirements": {
+      "demo": true,
+      "video": false,
+      "mainnet": false
+    },
+    "status": "building",
+    "pushed_at": "2026-08-31T21:13:41Z",
+    "stars": 0,
+    "builders": [
+      {
+        "login": "velikanghost",
+        "name": "velikanghost",
+        "avatar_url": "https://avatars.githubusercontent.com/u/110403728?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31"
+    ],
+    "head_sha": "003e31298ba52036e4b768050e981580d66bd230",
+    "readme_hash": "aaec6df4be61517c",
+    "desc_v6": true,
+    "churn_pct": 1.1,
+    "summary": "Confidential token allocation with transparent aggregate schedules and private beneficiary claims.",
+    "description_long": "Sevrin is confidential token-allocation infrastructure for Starknet that allows token issuers to publish funding schedules while keeping beneficiary identities private. It comprises a web application for users, an API deployed as a Cloudflare Worker, and a set of smart contracts including the SevrinFloatVault for managing allocations and the SevrinClaimAdapter for processing private STRK20 claims. The system uses one-time Merkle credentials to control claims and ensure privacy.",
+    "latest_push": "Modified the claim layout in the relevant pages and components.",
+    "tooling": [
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 79,
+    "deletions": 20,
+    "sprint": {
+      "pushes": 26,
+      "additions": 34029,
+      "deletions": 34,
+      "computed": 3
+    },
+    "assessment": null,
+    "star_evidence": "Cairo in the repository"
+  },
+  {
     "slug": "afterlight-recovery",
     "name": "Afterlight",
     "one_liner": "Private STRK20 recovery reserves with authenticated heartbeat, grace, and owner veto control.",
@@ -57,7 +127,7 @@
       "mainnet": true
     },
     "status": "finished",
-    "pushed_at": "2026-08-31T21:03:30Z",
+    "pushed_at": "2026-08-31T21:07:57Z",
     "stars": 0,
     "builders": [
       {
@@ -81,12 +151,13 @@
       "2026-08-30",
       "2026-08-31"
     ],
-    "head_sha": "317c57dc7d60e2408c4e82ea27441fcc8909e5e3",
+    "head_sha": "00a984c172ad8d96860f6666cf5672661f9618a6",
     "readme_hash": "db963a803a912a69",
     "desc_v6": true,
+    "churn_pct": 1.2,
     "summary": "A private recovery reserve for self-custody wallets on Starknet.",
     "description_long": "Afterlight allows owners to set up a fixed reserve for self-custody wallets, managing recovery through heartbeat authentication and a veto window. It is implemented with Cairo contracts, and features include private funding via STRK20, a neutral relayer for message signing, and an exact recovery process that links a designated successor key to a predetermined recovery destination.",
-    "latest_push": "Added a verified demo video in the documentation.",
+    "latest_push": "Hardened browser recovery-capacity checks.",
     "tooling": [
       {
         "label": "Cairo",
@@ -105,12 +176,11 @@
       }
     ],
     "has_readme": true,
-    "additions": 4,
-    "deletions": 2,
-    "churn_pct": 0,
+    "additions": 178,
+    "deletions": 36,
     "sprint": {
-      "pushes": 114,
-      "additions": 43210,
+      "pushes": 116,
+      "additions": 43352,
       "deletions": 275,
       "computed": 3
     },
@@ -146,7 +216,7 @@
       "mainnet": false
     },
     "status": "building",
-    "pushed_at": "2026-08-31T21:01:45Z",
+    "pushed_at": "2026-08-31T21:06:47Z",
     "stars": 0,
     "builders": [
       {
@@ -162,13 +232,13 @@
       "2026-08-30",
       "2026-08-31"
     ],
-    "head_sha": "0b0a8f5da3d47509458ddeb831b86ee55ce717dc",
+    "head_sha": "119525703c338818aa23ee1003333e80018c9e7f",
     "readme_hash": "1ae05c442724e928",
     "desc_v6": true,
-    "churn_pct": 72.6,
+    "churn_pct": 2.2,
     "summary": "An open, self-hostable note indexer and explorer for the STRK20 privacy pool.",
     "description_long": "This project ingests and stores state updates from the STRK20 pool contract in PostgreSQL, enabling efficient access to storage diffs, nullifiers, and public shield/unshield operations. It features a compatible discovery API that mimics the reference service endpoints, a keyless mode that keeps all sensitive keys on the local device, and real-time slot updates via a WebSocket. The project also includes an explorer for displaying transaction metrics and a CLI for various wallet operations.",
-    "latest_push": "Fixed proof retries and applied providers gate, with new lifecycle scripts.",
+    "latest_push": "Made the anchored trust grade accessible in the browser.",
     "tooling": [
       {
         "label": "Rust",
@@ -177,16 +247,129 @@
       }
     ],
     "has_readme": true,
-    "additions": 18375,
-    "deletions": 2489,
+    "additions": 597,
+    "deletions": 40,
     "sprint": {
-      "pushes": 30,
-      "additions": 23087,
+      "pushes": 31,
+      "additions": 23110,
       "deletions": 39,
       "computed": 3
     },
     "assessment": null,
     "star_evidence": ""
+  },
+  {
+    "slug": "stableroll",
+    "name": "stableroll",
+    "one_liner": "Cross-chain private payroll hub on Starknet (STRK20 Private Sprint)",
+    "category": "Other",
+    "repo_url": "https://github.com/SunsetLabs-Game/stableroll",
+    "demo_url": "",
+    "demo_video": "https://github.com/SunsetLabs-Game/stableroll/releases/download/demo-video/demo.mp4",
+    "x_handle": "",
+    "inspired_by": "",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "",
+    "contracts": [],
+    "transactions": [
+      {
+        "hash": "0x044b5d46090d34321729e253aea555b10de5f0ae81ff38fce0081048902110b9",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x04fe7d82f82ecb150f595d4a5b519d8dbeb8761d64e01644193b310019ee2aa6",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x077f3f2fef3675148e41b712ea9ede30e411c6f50a490ba91c6640ae6575c42f",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      }
+    ],
+    "verified_txs": 3,
+    "requirements": {
+      "demo": false,
+      "video": true,
+      "mainnet": true
+    },
+    "status": "building",
+    "pushed_at": "2026-08-31T21:02:47Z",
+    "stars": 0,
+    "builders": [
+      {
+        "login": "salazarsebas",
+        "name": "Sebastián Salazar Solano",
+        "avatar_url": "https://avatars.githubusercontent.com/u/112297389?v=4"
+      },
+      {
+        "login": "KevinMB0220",
+        "name": "Kevin MB",
+        "avatar_url": "https://avatars.githubusercontent.com/u/130603817?v=4"
+      },
+      {
+        "login": "Josue19-08",
+        "name": "Josue19-08",
+        "avatar_url": "https://avatars.githubusercontent.com/u/104031367?v=4"
+      }
+    ],
+    "agents": [
+      {
+        "family": "Claude",
+        "name": "Claude Opus 5",
+        "avatar_url": "",
+        "commits": 6
+      }
+    ],
+    "active_days": [
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-31"
+    ],
+    "head_sha": "3764abf70fe57704bd18c2bcff4783fece4ecf49",
+    "readme_hash": "87a8051ed6893ef5",
+    "desc_v6": true,
+    "churn_pct": 0.1,
+    "summary": "Cross-chain private payroll enabling secure salary distribution.",
+    "description_long": "StableRoll enables cross-chain private payroll, allowing companies to fund a payroll run on Starknet while ensuring recipient identities remain hidden. It includes a Cairo contract for payroll management, integrations for EVM and Solana chains, Waku for notifications, and a frontend for user interactions. The project is still under development, with several components completed and tested.",
+    "latest_push": "Added the Cavos sign-in feature and the dual-approval gate.",
+    "tooling": [
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Starknet Foundry",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 3,
+    "deletions": 1,
+    "sprint": {
+      "pushes": 53,
+      "additions": 32859,
+      "deletions": 0,
+      "computed": 3
+    },
+    "assessment": null,
+    "star_evidence": "Cairo in the repository"
   },
   {
     "slug": "ghostloop",
@@ -226,7 +409,6 @@
     "head_sha": "980e69050eee094b7516caf5615214c5413fd7df",
     "readme_hash": "20d27801eccefe53",
     "desc_v6": true,
-    "churn_pct": 100,
     "summary": "Borrow USDC and open leveraged ETH positions privately.",
     "description_long": "GhostLoop enables private borrowing of USDC and leveraged ETH positions on Vesu without linking to a user's public wallet. It uses STRK20 for private balances and unlinkable identities, while Vesu manages lending and risk. Key flows include borrowing USDC through a Shadow Account, creating leveraged ETH positions with Ekubo, and unwinding these positions to return ETH to a private balance.",
     "latest_push": "Added Starknet mainnet evidence tooling and GhostPosition executor.",
@@ -250,6 +432,7 @@
     "has_readme": true,
     "additions": 3444,
     "deletions": 36,
+    "churn_pct": 100,
     "sprint": {
       "pushes": 7,
       "additions": 3908,
@@ -352,7 +535,6 @@
     "head_sha": "81923ad3695f950d285379f2e618e50af23b3699",
     "readme_hash": "794cb09b78e41e11",
     "desc_v6": true,
-    "churn_pct": 0.5,
     "summary": "Create private payment links for users without prior privacy pool registration.",
     "description_long": "Xenia allows users to send private payments to recipients who have never registered with the STRK20 privacy pool. The sender generates a claim link containing the payment details, and upon opening the link, the recipient registers and claims the payment in one transaction. It organizes transactions into phases to streamline registration and payment through the `XeniaEscrow` anonymizer contract, which manages the fund transfers and maintains privacy during the process.",
     "latest_push": "Bound fetch for the paymaster and listed create-claim and private register-and-claim.",
@@ -396,6 +578,7 @@
     "has_readme": true,
     "additions": 13,
     "deletions": 32,
+    "churn_pct": 0.5,
     "sprint": {
       "pushes": 102,
       "additions": 18755,
@@ -511,7 +694,6 @@
     "head_sha": "54a70577a1665fb58869887b96fd62b03c18f122",
     "readme_hash": "c36a94ff40d67c98",
     "desc_v6": true,
-    "churn_pct": 3.5,
     "summary": "A private Bitcoin account for staking and payments on Starknet.",
     "description_long": "Holds shielded Bitcoin and allows users to earn yields without exposing their identities. The project features contracts like LumenVault, which stakes Bitcoin privately into an ERC-4626 pool, and LumenEscrow, which enables anonymous payments from the privacy pool to any address. It proves capabilities such as private Bitcoin staking, batch payouts, and two types of claims for transferring funds privately.",
     "latest_push": "Updated README and captured various aspects of adversary modeling.",
@@ -560,6 +742,7 @@
     "has_readme": true,
     "additions": 895,
     "deletions": 3,
+    "churn_pct": 3.5,
     "sprint": {
       "pushes": 119,
       "additions": 28261,
@@ -568,76 +751,6 @@
     },
     "assessment": null,
     "star_evidence": "4 contracts deployed on mainnet, Cairo in the repository"
-  },
-  {
-    "slug": "sevrin",
-    "name": "Sevrin",
-    "one_liner": "Confidential token-allocation infrastructure: public aggregate lockups, private beneficiary ownership, and STRK20-settled claims.",
-    "category": "Infra",
-    "repo_url": "https://github.com/velikanghost/sevrin",
-    "demo_url": "https://sevrin-orcin.vercel.app",
-    "demo_video": "",
-    "x_handle": "velkan_gst",
-    "inspired_by": "IDEA-17",
-    "affiliation": "",
-    "starred": false,
-    "star_reason": "",
-    "contracts": [],
-    "transactions": [],
-    "verified_txs": 0,
-    "requirements": {
-      "demo": true,
-      "video": false,
-      "mainnet": false
-    },
-    "status": "building",
-    "pushed_at": "2026-08-31T20:05:56Z",
-    "stars": 0,
-    "builders": [
-      {
-        "login": "velikanghost",
-        "name": "velikanghost",
-        "avatar_url": "https://avatars.githubusercontent.com/u/110403728?v=4"
-      }
-    ],
-    "agents": [],
-    "active_days": [
-      "2026-08-18",
-      "2026-08-19",
-      "2026-08-20",
-      "2026-08-21",
-      "2026-08-25",
-      "2026-08-26",
-      "2026-08-28",
-      "2026-08-29",
-      "2026-08-30",
-      "2026-08-31"
-    ],
-    "head_sha": "7284d29672522c02d0608814eaefc6c9c0b86851",
-    "readme_hash": "aaec6df4be61517c",
-    "desc_v6": true,
-    "churn_pct": 2.9,
-    "summary": "Confidential token allocation with transparent aggregate schedules and private beneficiary claims.",
-    "description_long": "Sevrin is confidential token-allocation infrastructure for Starknet that allows token issuers to publish funding schedules while keeping beneficiary identities private. It comprises a web application for users, an API deployed as a Cloudflare Worker, and a set of smart contracts including the SevrinFloatVault for managing allocations and the SevrinClaimAdapter for processing private STRK20 claims. The system uses one-time Merkle credentials to control claims and ensure privacy.",
-    "latest_push": "Fixed UI issues in ClaimPanel and IssuerDashboard components.",
-    "tooling": [
-      {
-        "label": "Cairo",
-        "live": false,
-        "stack": false
-      }
-    ],
-    "has_readme": true,
-    "additions": 156,
-    "deletions": 116,
-    "sprint": {
-      "pushes": 25,
-      "additions": 33970,
-      "deletions": 34,
-      "computed": 3
-    },
-    "assessment": null,
-    "star_evidence": "Cairo in the repository"
   },
   {
     "slug": "veilap",
@@ -686,7 +799,6 @@
     "head_sha": "96e776f691c41c36ed148b8cfc6aa0cdc79e0690",
     "readme_hash": "0eab0a002ddbc9c6",
     "desc_v6": true,
-    "churn_pct": 0.1,
     "summary": "Compete with private poker agents in secure tournaments.",
     "description_long": "Veil Arena allows players to build and enter private poker agents into competitions while keeping their strategies confidential. Players provide a coding agent with a strategy package via `AGENT.md`, approve their entry through their Starknet wallet, and compete in verifiable matches with recorded outcomes. The system encrypts submitted strategies, only decrypting them during scheduled matches, and supports various tournament formats such as head-to-head challenges and round-robin events.",
     "latest_push": "Fixed the worker route deployment test for isolation.",
@@ -720,6 +832,7 @@
     "has_readme": true,
     "additions": 15,
     "deletions": 1,
+    "churn_pct": 0.1,
     "sprint": {
       "pushes": 59,
       "additions": 29135,
@@ -786,7 +899,6 @@
     "head_sha": "c6704a657c642bdd1152e93daad98bd0161737a3",
     "readme_hash": "22ee1bf6e6d08567",
     "desc_v6": true,
-    "churn_pct": 0,
     "summary": "A private RFQ venue with encrypted correspondence and counterparties on Starknet.",
     "description_long": "APP20 enables private RFQ requests, encrypted mailbox correspondence, and secure directory management for counterparties. It features three main areas: RFQ for inventory-backed fund requests, Mailbox for encrypted messages and evidence, and Counterparties for device-encrypted contact storage. The project is built with a focus on privacy, employing on-device key management and connecting to the STRK20 privacy pool.",
     "latest_push": "Documented ten gaps identified in the adversarial audit and failure-mode hunt.",
@@ -835,6 +947,7 @@
     "has_readme": true,
     "additions": 9,
     "deletions": 4,
+    "churn_pct": 0,
     "sprint": {
       "pushes": 148,
       "additions": 64763,
@@ -954,7 +1067,6 @@
     "head_sha": "23dfef10a95c4afdedf52db25773b546f13ae7d9",
     "readme_hash": "9ea90cc93f9c32b8",
     "desc_v6": true,
-    "churn_pct": 6.9,
     "summary": "Encrypted negotiation and settlement infrastructure for AI agents.",
     "description_long": "Erebus is a system for AI agents to negotiate and settle transactions privately, using encrypted channels and a shielded-settlement mechanism. It includes features such as atomic transaction settlement, selective disclosure for deal terms, and supports agent autonomy through account abstraction on Starknet. Built on Protocol 4, it handles message encryption with AES-256-GCM-SIV and stores negotiation data in a way that preserves privacy while remaining transparent to the blockchain.",
     "latest_push": "Reduced content length in multiple documentation files for clarity.",
@@ -973,6 +1085,7 @@
     "has_readme": true,
     "additions": 396,
     "deletions": 2118,
+    "churn_pct": 6.9,
     "sprint": {
       "pushes": 108,
       "additions": 13876,
@@ -9588,7 +9701,7 @@
     "contracts": [
       {
         "address": "0x051c29216ddd5e9016fad4380db34e895dc8176f58ec4754cb3b4c4f14bda8b3",
-        "network": "sepolia"
+        "network": "unknown"
       }
     ],
     "transactions": [],
