@@ -21,7 +21,7 @@
       "mainnet": false
     },
     "status": "building",
-    "pushed_at": "2026-09-01T15:41:20Z",
+    "pushed_at": "2026-09-01T15:52:16Z",
     "stars": 0,
     "builders": [
       {
@@ -34,13 +34,13 @@
     "active_days": [
       "2026-09-01"
     ],
-    "head_sha": "cd8303ec833eb7696338b56c63f4a96e615a9e18",
-    "readme_hash": "c696645cb9796e92",
+    "head_sha": "b3bb8f8af0542bacc9d8ccb158dd0c080adb8372",
+    "readme_hash": "69a17ad98dbc4b40",
     "desc_v6": true,
-    "churn_pct": 15.8,
-    "summary": "Encrypts vulnerability reports and manages bounty settlements with privacy features.",
-    "description_long": "Private coordinated vulnerability disclosure with encrypted reports and proof-of-authorship. The system uses X25519/HKDF/AES-GCM for local encryption, supports shareable encrypted case envelopes, and claims cases with Stark signatures. Bounty settlements are linked to privacy-protected transactions in the STRK20 pool, with a focus on accountability for vendors through lifecycle states and remediation timelines.",
-    "latest_push": "Pinned public deployment gates and added live STRK20 pool verification.",
+    "churn_pct": 21.9,
+    "summary": "Private vulnerability disclosure with encrypted reports and bounty settlements.",
+    "description_long": "VeilZero enables private coordinated vulnerability disclosure, featuring encrypted reports, proof-of-authorship, committed remediation timelines, and shielded bounty settlements in STRK20. Built using Cairo contracts, it integrates local encryption for reports, domain-separated commitments, and lifecycle management for cases, while allowing wallet probe diagnostics. Key functionalities include shareable encrypted case envelopes, selective authorship proof, and reserve-backed note settlements, all operating on Starknet.",
+    "latest_push": "Verified the live STRK20 pool surface in diagnostics.",
     "tooling": [
       {
         "label": "get-starknet",
@@ -74,16 +74,115 @@
       }
     ],
     "has_readme": true,
-    "additions": 407,
+    "additions": 672,
     "deletions": 29,
     "sprint": {
-      "pushes": 20,
-      "additions": 9292,
+      "pushes": 22,
+      "additions": 9557,
       "deletions": 114,
       "computed": 3
     },
     "assessment": null,
     "star_evidence": "Cairo in the repository"
+  },
+  {
+    "slug": "iwa",
+    "name": "Iwa",
+    "one_liner": "Private savings circles on Starknet: neighbours contribute and take turns collecting the pot through the STRK20 pool, with amounts hidden and good standing provable.",
+    "category": "DeFi",
+    "repo_url": "https://github.com/solutionkanu12/iwa",
+    "demo_url": "https://iwa-psi.vercel.app",
+    "demo_video": "https://vimeo.com/1222855880",
+    "x_handle": "",
+    "inspired_by": "",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "",
+    "contracts": [
+      {
+        "address": "0x01f81497b09aa702a38715c0ec149d7672cd557c0caea480714d4802ff6f81be",
+        "network": "mainnet"
+      },
+      {
+        "address": "0x04cac02dcc7ca8c46c0b6f32985f17bf24d99557222e60c6881d147e13fafbbb",
+        "network": "mainnet"
+      }
+    ],
+    "transactions": [
+      {
+        "hash": "0x05a22066c25cd6b337a9a16bef431546a6eca86a6e4ebd6484cd65a8317a4877",
+        "ok": true,
+        "pool": true,
+        "mine": false,
+        "note": "touched the pool, but not through this project's contracts"
+      },
+      {
+        "hash": "0x46bd320ecdc20de3c97fc99a17eb1741a3425f5e414ce029c5d259e712817f5",
+        "ok": true,
+        "pool": true,
+        "mine": true
+      },
+      {
+        "hash": "0x551a5432911b05780c2746b7555f78f57c948355f56031e13a2af00a9470e32",
+        "ok": true,
+        "pool": true,
+        "mine": true
+      }
+    ],
+    "verified_txs": 2,
+    "requirements": {
+      "demo": true,
+      "video": true,
+      "mainnet": false
+    },
+    "status": "building",
+    "pushed_at": "2026-09-01T15:51:18Z",
+    "stars": 1,
+    "builders": [
+      {
+        "login": "solutionkanu12",
+        "name": "solutionkanu12",
+        "avatar_url": "https://avatars.githubusercontent.com/u/174873861?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-31",
+      "2026-09-01"
+    ],
+    "head_sha": "5f3acd97dc64d369dc55ee23645b9e4e4eab70c3",
+    "readme_hash": "b2e894f0af57bd05",
+    "desc_v6": true,
+    "churn_pct": 10.3,
+    "summary": "Savings circles that keep contributions private while tracking member reliability.",
+    "description_long": "Iwa enables users to save together in rotating circles similar to traditional financial groups like ajo and esusu, while maintaining the privacy of monetary contributions. Contributions are settled privately, with only the participation and compliance data stored publicly, allowing members to prove their financial reputation without revealing their full financial history. The project is built using Starknet and the STRK20 privacy pool, ensuring that payment amounts and relationships are hidden while still providing verifiable records of member behavior.",
+    "latest_push": "Fixed the core circle flow and made the organizer flow recoverable.",
+    "tooling": [
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Rust",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 4807,
+    "deletions": 607,
+    "sprint": {
+      "pushes": 29,
+      "additions": 23247,
+      "deletions": 175,
+      "computed": 3
+    },
+    "assessment": null,
+    "star_evidence": "2 contracts deployed on mainnet, Cairo in the repository"
   },
   {
     "slug": "nomos",
@@ -135,7 +234,7 @@
     "churn_pct": 47.5,
     "summary": "A private payment gateway for businesses with multiple payment methods.",
     "description_long": "Nomos enables businesses to integrate a payment link or checkout widget for customers to pay via a shielded wallet or an ordinary Starknet wallet. It operates with a custodial model where payments first settle into Nomos's internal wallet before merchants access their balances, ensuring smooth transaction flows while maintaining privacy for the merchant's identity. Built with Next.js, TypeScript, and starknet.js, the project features components like checkout interfaces, ledgers, and an operating wallet for managing transactions.",
-    "latest_push": "Fixed an issue with double payouts spending the same balance.",
+    "latest_push": "Fixed a bug that allowed two payouts to spend the same balance.",
     "tooling": [
       {
         "label": "get-starknet",
@@ -252,7 +351,7 @@
     "churn_pct": 0.2,
     "summary": "Manage private subscription payments for creators and users.",
     "description_long": "Keepr is a non-custodial recurring payment protocol that enables private subscription payments using shielded notes in the STRK20 privacy pool. It features auto-renewals via a 24/7 Keeper Agent, creator privacy through viewing keys for earnings analytics, and nameless membership proofs for tier-gated access. Built with a Frontend in Next.js and contracts written in Cairo, it integrates with Starknet using `starknet.js`.",
-    "latest_push": "Documented the first live subscribe transaction in address.md.",
+    "latest_push": "Recorded the first live subscribe transaction in address.md.",
     "tooling": [
       {
         "label": "get-starknet",
@@ -393,105 +492,6 @@
       "facts_v2": true
     },
     "star_evidence": ""
-  },
-  {
-    "slug": "iwa",
-    "name": "Iwa",
-    "one_liner": "Private savings circles on Starknet: neighbours contribute and take turns collecting the pot through the STRK20 pool, with amounts hidden and good standing provable.",
-    "category": "DeFi",
-    "repo_url": "https://github.com/solutionkanu12/iwa",
-    "demo_url": "https://iwa-psi.vercel.app",
-    "demo_video": "https://vimeo.com/1222855880",
-    "x_handle": "",
-    "inspired_by": "",
-    "affiliation": "",
-    "starred": false,
-    "star_reason": "",
-    "contracts": [
-      {
-        "address": "0x01f81497b09aa702a38715c0ec149d7672cd557c0caea480714d4802ff6f81be",
-        "network": "mainnet"
-      },
-      {
-        "address": "0x04cac02dcc7ca8c46c0b6f32985f17bf24d99557222e60c6881d147e13fafbbb",
-        "network": "mainnet"
-      }
-    ],
-    "transactions": [
-      {
-        "hash": "0x05a22066c25cd6b337a9a16bef431546a6eca86a6e4ebd6484cd65a8317a4877",
-        "ok": true,
-        "pool": true,
-        "mine": false,
-        "note": "touched the pool, but not through this project's contracts"
-      },
-      {
-        "hash": "0x46bd320ecdc20de3c97fc99a17eb1741a3425f5e414ce029c5d259e712817f5",
-        "ok": true,
-        "pool": true,
-        "mine": true
-      },
-      {
-        "hash": "0x551a5432911b05780c2746b7555f78f57c948355f56031e13a2af00a9470e32",
-        "ok": true,
-        "pool": true,
-        "mine": true
-      }
-    ],
-    "verified_txs": 2,
-    "requirements": {
-      "demo": true,
-      "video": true,
-      "mainnet": false
-    },
-    "status": "building",
-    "pushed_at": "2026-09-01T15:02:11Z",
-    "stars": 1,
-    "builders": [
-      {
-        "login": "solutionkanu12",
-        "name": "solutionkanu12",
-        "avatar_url": "https://avatars.githubusercontent.com/u/174873861?v=4"
-      }
-    ],
-    "agents": [],
-    "active_days": [
-      "2026-08-27",
-      "2026-08-28",
-      "2026-08-29",
-      "2026-08-31",
-      "2026-09-01"
-    ],
-    "head_sha": "ba8470c4633932a97f7cff03f993409204663f35",
-    "readme_hash": "b2e894f0af57bd05",
-    "desc_v6": true,
-    "churn_pct": 8,
-    "summary": "Savings circles that keep contributions private while tracking member reliability.",
-    "description_long": "Iwa enables users to save together in rotating circles similar to traditional financial groups like ajo and esusu, while maintaining the privacy of monetary contributions. Contributions are settled privately, with only the participation and compliance data stored publicly, allowing members to prove their financial reputation without revealing their full financial history. The project is built using Starknet and the STRK20 privacy pool, ensuring that payment amounts and relationships are hidden while still providing verifiable records of member behavior.",
-    "latest_push": "Restored the core circle flow and made the organizer flow recoverable.",
-    "tooling": [
-      {
-        "label": "Cairo",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "Rust",
-        "live": false,
-        "stack": false
-      }
-    ],
-    "has_readme": true,
-    "additions": 3429,
-    "deletions": 604,
-    "sprint": {
-      "pushes": 28,
-      "additions": 23274,
-      "deletions": 175,
-      "computed": 3
-    },
-    "assessment": null,
-    "star_evidence": "2 contracts deployed on mainnet, Cairo in the repository"
   },
   {
     "slug": "vinss",
@@ -656,7 +656,7 @@
     "churn_pct": 1,
     "summary": "A private deal room for encrypted negotiations, escrow, and settlement verification.",
     "description_long": "VINSS connects encrypted conversation, structured negotiation, escrow, fulfillment, settlement, and verifiable evidence in a continuous deal lifecycle. Built on Starknet, it uses client-side encryption for messaging and offer terms, integrating escrow settlement with a focus on privacy. The design protects sensitive commercial context while ensuring that the necessary public information remains verifiable.",
-    "latest_push": "Fixed invite recovery binding to wallet and added social sharing functionality.",
+    "latest_push": "Fixed invite recovery binding to wallet and added CI checks.",
     "tooling": [
       {
         "label": "Cairo",
@@ -820,9 +820,9 @@
     "readme_hash": "5bf098c697e54327",
     "desc_v6": true,
     "churn_pct": 9.5,
-    "summary": "Sealed-ballot governance and anonymous treasury payouts for DAOs.",
-    "description_long": "This project implements private voting and treasury management for decentralized autonomous organizations (DAOs) using shielded transactions. It features a Proposal Registry, Governance Anonymizer, and a Treasury Multisig, all built on Starknet. Each vote is a private transfer, and treasury payouts keep recipient identities confidential while revealing only the amounts. The system is operational on both mainnet and Sepolia.",
-    "latest_push": "Settled a proposal's stake per identity and improved tally provenance display.",
+    "summary": "Sealed-ballot governance with a shielded treasury for DAOs on STRK20.",
+    "description_long": "Aperture allows for private voting in DAOs by transforming votes into shielded transfers. Votes maintain anonymity by ensuring that only aggregate results are published, while treasury payouts conceal recipient identities. It is built using multiple smart contracts, including ProposalRegistry, GovernanceAnonymizer, and TreasuryMultisig, all deployed on the Starknet mainnet.",
+    "latest_push": "Settled a proposal's stake per identity and fixed tally provenance reading.",
     "tooling": [
       {
         "label": "starknet.js",
@@ -11255,9 +11255,9 @@
     "readme_hash": "a940f48b3dbcf8bb",
     "desc_v6": true,
     "churn_pct": 0.1,
-    "summary": "Trustless private OTC settlement with atomic fills and hidden identities.",
-    "description_long": "OTC Veil enables private over-the-counter trading on Starknet without intermediaries holding funds. It uses a Cairo anonymizer contract to coordinate atomic settlements between buyers and sellers, ensuring neither party's identity is revealed on-chain. The system supports reclaiming expired orders and charges fees on transactions, with the repository containing a full implementation in Cairo and unit tests.",
-    "latest_push": "Fixed the license and improved Alchemy URL handling with environment support.",
+    "summary": "Trustless, private settlement for OTC trades with atomic execution and hidden identities.",
+    "description_long": "OTC Veil allows users to list and fill large trades through a privacy pool on Starknet. It features a Cairo contract that coordinates private transactions, ensuring no intermediary holds funds and identities remain hidden. The system includes functionalities for filling trades, settling payments, claiming proceeds, reclaiming expired orders, and a clear fee structure.",
+    "latest_push": "Fixed license and improved Alchemy URL handling in environment.",
     "tooling": [
       {
         "label": "get-starknet",
