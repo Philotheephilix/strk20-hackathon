@@ -1,5 +1,104 @@
 [
   {
+    "slug": "iwa",
+    "name": "Iwa",
+    "one_liner": "Private savings circles on Starknet: neighbours contribute and take turns collecting the pot through the STRK20 pool, with amounts hidden and good standing provable.",
+    "category": "DeFi",
+    "repo_url": "https://github.com/solutionkanu12/iwa",
+    "demo_url": "https://iwa-psi.vercel.app",
+    "demo_video": "https://vimeo.com/1222855880",
+    "x_handle": "",
+    "inspired_by": "",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "",
+    "contracts": [
+      {
+        "address": "0x01f81497b09aa702a38715c0ec149d7672cd557c0caea480714d4802ff6f81be",
+        "network": "mainnet"
+      },
+      {
+        "address": "0x04cac02dcc7ca8c46c0b6f32985f17bf24d99557222e60c6881d147e13fafbbb",
+        "network": "mainnet"
+      }
+    ],
+    "transactions": [
+      {
+        "hash": "0x05a22066c25cd6b337a9a16bef431546a6eca86a6e4ebd6484cd65a8317a4877",
+        "ok": true,
+        "pool": true,
+        "mine": false,
+        "note": "touched the pool, but not through this project's contracts"
+      },
+      {
+        "hash": "0x46bd320ecdc20de3c97fc99a17eb1741a3425f5e414ce029c5d259e712817f5",
+        "ok": true,
+        "pool": true,
+        "mine": true
+      },
+      {
+        "hash": "0x551a5432911b05780c2746b7555f78f57c948355f56031e13a2af00a9470e32",
+        "ok": true,
+        "pool": true,
+        "mine": true
+      }
+    ],
+    "verified_txs": 2,
+    "requirements": {
+      "demo": true,
+      "video": true,
+      "mainnet": false
+    },
+    "status": "building",
+    "pushed_at": "2026-09-01T18:57:07Z",
+    "stars": 1,
+    "builders": [
+      {
+        "login": "solutionkanu12",
+        "name": "solutionkanu12",
+        "avatar_url": "https://avatars.githubusercontent.com/u/174873861?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-31",
+      "2026-09-01"
+    ],
+    "head_sha": "900c00b543d0e30fbde16f9976f2dc88611f8fc5",
+    "readme_hash": "b2e894f0af57bd05",
+    "desc_v6": true,
+    "churn_pct": 2.3,
+    "summary": "Savings circles that keep contributions private while tracking member reliability.",
+    "description_long": "Iwa enables users to save together in rotating circles similar to traditional financial groups like ajo and esusu, while maintaining the privacy of monetary contributions. Contributions are settled privately, with only the participation and compliance data stored publicly, allowing members to prove their financial reputation without revealing their full financial history. The project is built using Starknet and the STRK20 privacy pool, ensuring that payment amounts and relationships are hidden while still providing verifiable records of member behavior.",
+    "latest_push": "Fixed wallet authorization binding in requests across multiple files.",
+    "tooling": [
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Rust",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 1202,
+    "deletions": 77,
+    "sprint": {
+      "pushes": 33,
+      "additions": 23226,
+      "deletions": 175,
+      "computed": 3
+    },
+    "assessment": null,
+    "star_evidence": "2 contracts deployed on mainnet, Cairo in the repository"
+  },
+  {
     "slug": "droptron-launchpad",
     "name": "droptron-launchpad",
     "one_liner": "",
@@ -37,7 +136,6 @@
     "head_sha": "a3bc65e934bb1304e64b79cf30039f237658aa08",
     "readme_hash": "c988c085e7b6590c",
     "desc_v6": true,
-    "churn_pct": 0,
     "summary": "Private token launches and distribution for Starknet projects.",
     "description_long": "Droptron supports private participation in token launches and private token distribution. It manages shielded allocations, private team distributions, airdrop claims with entitlement notes, and multi-tranche vesting claims. The project is currently in planning, with no contracts deployed or mainnet transactions made yet.",
     "latest_push": "Updated the README file and added documentation for Droptron integration.",
@@ -45,6 +143,7 @@
     "has_readme": true,
     "additions": 1,
     "deletions": 0,
+    "churn_pct": 0,
     "sprint": {
       "pushes": 2,
       "additions": 153,
@@ -106,7 +205,6 @@
     "head_sha": "3bcf50c6acdfc12f15b5a19bd7e8ff609f5fbef3",
     "readme_hash": "7f6f67783537f3af",
     "desc_v6": true,
-    "churn_pct": 3.4,
     "summary": "Prices what privacy costs on STRK20 and executes fee-aware tranche scheduling.",
     "description_long": "Rhizome prices the cost of unlinkable deposits and withdrawals in the STRK20 pool and executes them through its own anonymizer contract. It reads the pool's live fee and historical fees, assesses public Deposit and Withdrawal events, computes the optimal number of tranches for a given position size, and schedules them based on traffic patterns to maximize unlinkability. Each tranche is shielded and timed to reduce correlation risks, ensuring several indistinguishable deposits with no shared fingerprints.",
     "latest_push": "Removed the felt() crash class and captured failed vault transaction hashes.",
@@ -140,6 +238,7 @@
     "has_readme": true,
     "additions": 204,
     "deletions": 79,
+    "churn_pct": 3.4,
     "sprint": {
       "pushes": 79,
       "additions": 12610,
@@ -148,105 +247,6 @@
     },
     "assessment": null,
     "star_evidence": "1 contract deployed, Cairo in the repository"
-  },
-  {
-    "slug": "iwa",
-    "name": "Iwa",
-    "one_liner": "Private savings circles on Starknet: neighbours contribute and take turns collecting the pot through the STRK20 pool, with amounts hidden and good standing provable.",
-    "category": "DeFi",
-    "repo_url": "https://github.com/solutionkanu12/iwa",
-    "demo_url": "https://iwa-psi.vercel.app",
-    "demo_video": "https://vimeo.com/1222855880",
-    "x_handle": "",
-    "inspired_by": "",
-    "affiliation": "",
-    "starred": false,
-    "star_reason": "",
-    "contracts": [
-      {
-        "address": "0x01f81497b09aa702a38715c0ec149d7672cd557c0caea480714d4802ff6f81be",
-        "network": "mainnet"
-      },
-      {
-        "address": "0x04cac02dcc7ca8c46c0b6f32985f17bf24d99557222e60c6881d147e13fafbbb",
-        "network": "mainnet"
-      }
-    ],
-    "transactions": [
-      {
-        "hash": "0x05a22066c25cd6b337a9a16bef431546a6eca86a6e4ebd6484cd65a8317a4877",
-        "ok": true,
-        "pool": true,
-        "mine": false,
-        "note": "touched the pool, but not through this project's contracts"
-      },
-      {
-        "hash": "0x46bd320ecdc20de3c97fc99a17eb1741a3425f5e414ce029c5d259e712817f5",
-        "ok": true,
-        "pool": true,
-        "mine": true
-      },
-      {
-        "hash": "0x551a5432911b05780c2746b7555f78f57c948355f56031e13a2af00a9470e32",
-        "ok": true,
-        "pool": true,
-        "mine": true
-      }
-    ],
-    "verified_txs": 2,
-    "requirements": {
-      "demo": true,
-      "video": true,
-      "mainnet": false
-    },
-    "status": "building",
-    "pushed_at": "2026-09-01T18:18:22Z",
-    "stars": 1,
-    "builders": [
-      {
-        "login": "solutionkanu12",
-        "name": "solutionkanu12",
-        "avatar_url": "https://avatars.githubusercontent.com/u/174873861?v=4"
-      }
-    ],
-    "agents": [],
-    "active_days": [
-      "2026-08-27",
-      "2026-08-28",
-      "2026-08-29",
-      "2026-08-31",
-      "2026-09-01"
-    ],
-    "head_sha": "f782fe3672e4d067279cee78e47c2e1174a0e18b",
-    "readme_hash": "b2e894f0af57bd05",
-    "desc_v6": true,
-    "churn_pct": 0.8,
-    "summary": "Savings circles that keep contributions private while tracking member reliability.",
-    "description_long": "Iwa enables users to save together in rotating circles similar to traditional financial groups like ajo and esusu, while maintaining the privacy of monetary contributions. Contributions are settled privately, with only the participation and compliance data stored publicly, allowing members to prove their financial reputation without revealing their full financial history. The project is built using Starknet and the STRK20 privacy pool, ensuring that payment amounts and relationships are hidden while still providing verifiable records of member behavior.",
-    "latest_push": "Fixed issues to minimize public coordination data exposure.",
-    "tooling": [
-      {
-        "label": "Cairo",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "Rust",
-        "live": false,
-        "stack": false
-      }
-    ],
-    "has_readme": true,
-    "additions": 359,
-    "deletions": 55,
-    "sprint": {
-      "pushes": 32,
-      "additions": 23305,
-      "deletions": 175,
-      "computed": 3
-    },
-    "assessment": null,
-    "star_evidence": "2 contracts deployed on mainnet, Cairo in the repository"
   },
   {
     "slug": "veilzero",
@@ -286,7 +286,6 @@
     "head_sha": "5ea9fb2343ff2fe658d757874ff6b1e9459e7e38",
     "readme_hash": "7d0f159c37ee5d5c",
     "desc_v6": true,
-    "churn_pct": 11.9,
     "summary": "Private vulnerability disclosure with encrypted reports and shielded bounties.",
     "description_long": "VeilZero enables private coordinated vulnerability disclosures with encrypted reports, proof-of-authorship, and committed remediation timelines. It includes features like vendor-readable encryption, shareable encrypted case envelopes, and case-signed reward requests, all built on Starknet with Cairo contracts. The researcher keeps keys in the browser, and the vendor can interact with a bounded reserve for bounty claims and acknowledgments without revealing sensitive information.",
     "latest_push": "Required case-signed reward authorization in the contract.",
@@ -325,6 +324,7 @@
     "has_readme": true,
     "additions": 551,
     "deletions": 61,
+    "churn_pct": 11.9,
     "sprint": {
       "pushes": 46,
       "additions": 11590,
@@ -418,7 +418,6 @@
     "head_sha": "36ed45c90673cc163e499c837f08ac0486537a58",
     "readme_hash": "27013f827f2806d9",
     "desc_v6": true,
-    "churn_pct": 0.1,
     "summary": "A private financial terminal for sending, receiving, and trading STRK20 assets.",
     "description_long": "Orrange is a consumer-facing application that enables private financial transactions on Starknet, allowing users to send, receive, swap, and trade STRK20 assets without needing to manage complex cryptographic processes. Built on top of the STRK20 privacy pool and the Starknet Wallet API, it integrates seamlessly with privacy wallets to handle secure operations, while providing a user-friendly interface for activities like private swaps and managing a treasury with an AI assistant.",
     "latest_push": "Updated README for Orrange terminal and modified change log.",
@@ -472,6 +471,7 @@
     "has_readme": true,
     "additions": 85,
     "deletions": 47,
+    "churn_pct": 0.1,
     "sprint": {
       "pushes": 182,
       "additions": 20115,
@@ -540,7 +540,6 @@
     "head_sha": "2d2c14fca023dbd44d8f3233725b520a4fac5414",
     "readme_hash": "dedb331b68aa2d67",
     "desc_v6": true,
-    "churn_pct": 3.8,
     "summary": "A hybrid local-first security system with deception networks and threat intelligence sharing.",
     "description_long": "CipherNest connects local security measures with zero-knowledge economic coordination. It deploys containerized digital twin decoys and generates lure documents with tracking watermarks, while maintaining private telemetry on defender machines. The setup includes a web-based operations console, a defender agent with Docker for isolation, and a GhostBounty mechanism for anonymous bounty rewards using Starknet's STRK20 notes.",
     "latest_push": "Implemented dark mode UI theme across authentication pages.",
@@ -569,6 +568,7 @@
     "has_readme": true,
     "additions": 252,
     "deletions": 261,
+    "churn_pct": 3.8,
     "sprint": {
       "pushes": 80,
       "additions": 17098,
@@ -710,7 +710,7 @@
     "churn_pct": 100,
     "summary": "",
     "description_long": "",
-    "latest_push": "Installed STRK20 skills and initialized the Next.js web application.",
+    "latest_push": "Installed STRK20 skills and initialized Next.js web application.",
     "tooling": [],
     "has_readme": false,
     "additions": 5229,
@@ -2039,10 +2039,9 @@
       },
       {
         "hash": "0x0571f6c1946da7d5247aad0cfc549cbb9633ec92338c938de2b8d54790c4819a",
-        "ok": false,
-        "pool": false,
-        "mine": false,
-        "note": "not found on mainnet"
+        "ok": true,
+        "pool": true,
+        "mine": true
       },
       {
         "hash": "0x04b10fcdd0b5c2090d76cac4d040acdac3596e9c9abf52d866445e3702e5150a",
@@ -2051,13 +2050,13 @@
         "mine": true
       }
     ],
-    "verified_txs": 2,
+    "verified_txs": 3,
     "requirements": {
       "demo": true,
       "video": true,
-      "mainnet": false
+      "mainnet": true
     },
-    "status": "building",
+    "status": "finished",
     "pushed_at": "2026-09-01T12:51:35Z",
     "stars": 0,
     "builders": [
