@@ -21,7 +21,7 @@
       "mainnet": false
     },
     "status": "building",
-    "pushed_at": "2026-09-01T10:36:27Z",
+    "pushed_at": "2026-09-01T11:10:34Z",
     "stars": 0,
     "builders": [
       {
@@ -34,13 +34,13 @@
     "active_days": [
       "2026-09-01"
     ],
-    "head_sha": "eb0be4514c1288e5a9fd9f3503bf1bf9332b1633",
-    "readme_hash": "777e2d4e2a1cf1d2",
+    "head_sha": "4723734df80498c9aa58b8da4067913b36923679",
+    "readme_hash": "1277c603914735f7",
     "desc_v6": true,
-    "churn_pct": 0.6,
-    "summary": "Private coordinated vulnerability disclosure with encrypted reporting and shielded bounty settlement.",
-    "description_long": "VeilZero enables researchers to report vulnerabilities securely with encrypted reports and verified identities. Built with local AES-256-GCM encryption for reports, domain-separated commitments, and a Cairo smart contract on Starknet, it allows researchers to submit claims while maintaining privacy. The workflow supports case management through commitment and lifecycle states, utilizing a reserve-backed bounty settlement mechanism.",
-    "latest_push": "Recorded accepted hackathon registration and published verified demo URL.",
+    "churn_pct": 28.3,
+    "summary": "Private vulnerability disclosure with encrypted reports and STRK20 bounty settlement.",
+    "description_long": "VeilZero enables privacy-centric vulnerability reporting by allowing researchers to submit encrypted reports and receive rewards through shielded STRK20 transactions. The project is built with local AES-256-GCM encryption for reports, a Cairo protocol for lifecycle management, and a wallet API for diagnostics. Features include commitment to case domains, recovery package export, and structured lifecycle states, with ongoing development towards mainnet contract deployment.",
+    "latest_push": "Added read-only STRK20 capability probe and tested contract lifecycle invariants.",
     "tooling": [
       {
         "label": "get-starknet",
@@ -74,16 +74,123 @@
       }
     ],
     "has_readme": true,
-    "additions": 3,
-    "deletions": 3,
+    "additions": 364,
+    "deletions": 14,
     "sprint": {
-      "pushes": 7,
-      "additions": 7180,
-      "deletions": 10,
+      "pushes": 10,
+      "additions": 7542,
+      "deletions": 22,
       "computed": 3
     },
     "assessment": null,
     "star_evidence": "Cairo in the repository"
+  },
+  {
+    "slug": "stake-wars",
+    "name": "stake-wars",
+    "one_liner": "",
+    "category": "Other",
+    "repo_url": "https://github.com/broody/stake-wars",
+    "demo_url": "https://stakewars.gg",
+    "demo_video": "https://assets.stakewars.gg/demo/strk20-hackathon-demo.mp4",
+    "x_handle": "",
+    "inspired_by": "",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "StakeWars lacks innovative privacy features and engineering depth.",
+    "contracts": [
+      {
+        "address": "0x07e50e2acad557379785d671d6dde25cde4e18714470b6619f764233cc12b509",
+        "network": "mainnet"
+      }
+    ],
+    "transactions": [
+      {
+        "hash": "0x02fcc3ef7b4068bc48387ae6b5fe967ae218e446d5bfc44c372fe8447da2caea",
+        "ok": true,
+        "pool": true,
+        "mine": true
+      },
+      {
+        "hash": "0x0571f6c1946da7d5247aad0cfc549cbb9633ec92338c938de2b8d54790c4819a",
+        "ok": true,
+        "pool": true,
+        "mine": true
+      },
+      {
+        "hash": "0x04b10fcdd0b5c2090d76cac4d040acdac3596e9c9abf52d866445e3702e5150a",
+        "ok": true,
+        "pool": true,
+        "mine": true
+      }
+    ],
+    "verified_txs": 3,
+    "requirements": {
+      "demo": true,
+      "video": true,
+      "mainnet": true
+    },
+    "status": "finished",
+    "pushed_at": "2026-09-01T11:05:20Z",
+    "stars": 0,
+    "builders": [
+      {
+        "login": "broody",
+        "name": "broody",
+        "avatar_url": "https://avatars.githubusercontent.com/u/610224?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-08-14",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01"
+    ],
+    "head_sha": "1b040562ff2e0934c060ada373e0a62f15874b31",
+    "readme_hash": "52fdb47df86b9b82",
+    "desc_v6": true,
+    "churn_pct": 0.9,
+    "summary": "A strategic game where players capture territory using delegated STRK.",
+    "description_long": "Stake Wars is a non-custodial strategy game that allows players to deploy delegated STRK as FORCE to capture and defend Sectors, challenge other players, and manage their strength visibility. The project consists of a web application, an API built with Go, and Cairo contracts. It integrates with the Whisper library for private auction mechanics and has a structured repository layout that includes separate directories for the API, front end, contracts, documentation, and third-party vendors.",
+    "latest_push": "Fixed the waiting behavior for Beacon projection image and camera.",
+    "tooling": [
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 206,
+    "deletions": 79,
+    "sprint": {
+      "pushes": 115,
+      "additions": 39010,
+      "deletions": 698,
+      "computed": 3
+    },
+    "assessment": {
+      "innovative": false,
+      "complex": false,
+      "why_innovative": "This project operates as a game without unique private mechanisms.",
+      "why_complex": "There are no deployed contracts or complex Cairo implementations.",
+      "reason": "StakeWars lacks innovative privacy features and engineering depth.",
+      "facts_v2": true
+    },
+    "star_evidence": "1 contract deployed on mainnet, Cairo in the repository"
   },
   {
     "slug": "ghoste-starknet",
@@ -307,7 +414,6 @@
     "head_sha": "ee63ec1cfd740f9d93c46021b21123fd400a0da8",
     "readme_hash": "a3d46036d2d40249",
     "desc_v6": true,
-    "churn_pct": 0,
     "summary": "A private deal room for encrypted negotiations, escrow, and settlement verification.",
     "description_long": "VINSS connects encrypted conversation, structured negotiation, escrow, fulfillment, settlement, and verifiable evidence in a continuous deal lifecycle. Built on Starknet, it uses client-side encryption for messaging and offer terms, integrating escrow settlement with a focus on privacy. The design protects sensitive commercial context while ensuring that the necessary public information remains verifiable.",
     "latest_push": "Fixed the Rekber workflow fee to 1 STRK and removed sensitive logging.",
@@ -321,6 +427,7 @@
     "has_readme": true,
     "additions": 1,
     "deletions": 9,
+    "churn_pct": 0,
     "sprint": {
       "pushes": 225,
       "additions": 33972,
@@ -426,7 +533,6 @@
     "head_sha": "70f468e64ccbc4ebff5f592f34d5854563d7e3ea",
     "readme_hash": "c09f49281fcef750",
     "desc_v6": true,
-    "churn_pct": 0.3,
     "summary": "Execute multi-step, multi-token DeFi plans in a single private transaction.",
     "description_long": "Jalin acts as a programmable execution router for the STRK20 shielded pool, enabling a single private transaction to carry out complex operations like swaps, lending, and bridging through a single `privacy_invoke`. It allows users to define a plan with various steps targeting any Starknet contract, ensuring security through a set of enforced invariants in the Cairo smart contracts.",
     "latest_push": "Fixed test assertions and updated the recorder logic.",
@@ -455,6 +561,7 @@
     "has_readme": true,
     "additions": 33,
     "deletions": 8,
+    "churn_pct": 0.3,
     "sprint": {
       "pushes": 159,
       "additions": 18712,
@@ -503,7 +610,6 @@
     "head_sha": "ad2d9c6270c0ba1f24ce0364f8304a128bb73840",
     "readme_hash": "26f60fe412d00892",
     "desc_v6": true,
-    "churn_pct": 98.7,
     "summary": "Private borrowing and leveraged positions without public wallet links.",
     "description_long": "GhostLoop enables private borrowing and leveraged positions on Vesu, allowing users to manage ETH and USDC without revealing their public wallet connections. The system uses a Shadow Account to maintain privacy for collateral, debt, and on-chain activities. Key components include the STRK20 privacy pool for secure balance management, Vesu for lending, and Ekubo for swap liquidity.",
     "latest_push": "Added the live Vesu position dashboard and encrypted position capabilities.",
@@ -542,6 +648,7 @@
     "has_readme": true,
     "additions": 5409,
     "deletions": 276,
+    "churn_pct": 98.7,
     "sprint": {
       "pushes": 15,
       "additions": 11510,
@@ -612,7 +719,6 @@
     "head_sha": "884c8a3a9bb7eff4ee01c598f7d260700e28240b",
     "readme_hash": "be99ab349e1c15f4",
     "desc_v6": true,
-    "churn_pct": 11.5,
     "summary": "A private launch and trading terminal with unlinkable execution identities.",
     "description_long": "Veyl allows trading and launching tokens anonymously while using execution identities that cannot be linked back to a user's wallet. It features shielded funding through the STRK20 privacy pool, sealed-bid fair launches, and private transfers and balances. The application is built using Next.js for the frontend and Cairo for smart contracts on Starknet, with integration into the STRK20 protocol for privacy-enhanced transactions.",
     "latest_push": "Added a warning for insufficient funds before launch submission.",
@@ -656,6 +762,7 @@
     "has_readme": true,
     "additions": 851,
     "deletions": 268,
+    "churn_pct": 11.5,
     "sprint": {
       "pushes": 62,
       "additions": 13201,
@@ -794,7 +901,6 @@
     "head_sha": "4dc4c62c7d080c5d29b8bf0d140b89a43533832c",
     "readme_hash": "e178b11cad0e8ada",
     "desc_v6": true,
-    "churn_pct": 2.7,
     "summary": "Encrypted negotiation and settlement infrastructure for AI agents.",
     "description_long": "Erebus is a system for AI agents to negotiate and settle transactions privately, using encrypted channels and a shielded-settlement mechanism. It includes features such as atomic transaction settlement, selective disclosure for deal terms, and supports agent autonomy through account abstraction on Starknet. Built on Protocol 4, it handles message encryption with AES-256-GCM-SIV and stores negotiation data in a way that preserves privacy while remaining transparent to the blockchain.",
     "latest_push": "Seamlessly onboarded Erebus with network configuration adjustments.",
@@ -813,6 +919,7 @@
     "has_readme": true,
     "additions": 999,
     "deletions": 23,
+    "churn_pct": 2.7,
     "sprint": {
       "pushes": 110,
       "additions": 14139,
@@ -877,7 +984,6 @@
     "head_sha": "122ec7f5c9fd2e78b863b46079d73f01d19cc4bf",
     "readme_hash": "ce7ed9ea46b10a83",
     "desc_v6": true,
-    "churn_pct": 0,
     "summary": "Compete with private poker agents in secure tournaments.",
     "description_long": "Veil Arena allows players to build and enter private poker agents into competitions while keeping their strategies confidential. Players provide a coding agent with a strategy package via `AGENT.md`, approve their entry through their Starknet wallet, and compete in verifiable matches with recorded outcomes. The system encrypts submitted strategies, only decrypting them during scheduled matches, and supports various tournament formats such as head-to-head challenges and round-robin events.",
     "latest_push": "Configured CI to run browser checks on the production build.",
@@ -911,6 +1017,7 @@
     "has_readme": true,
     "additions": 5,
     "deletions": 4,
+    "churn_pct": 0,
     "sprint": {
       "pushes": 66,
       "additions": 29247,
@@ -991,7 +1098,6 @@
     "head_sha": "dd580c29e96027b522f0e1b0bb680ba699113f58",
     "readme_hash": "b2e894f0af57bd05",
     "desc_v6": true,
-    "churn_pct": 0.6,
     "summary": "Savings circles that keep contributions private while tracking member reliability.",
     "description_long": "Iwa enables users to save together in rotating circles similar to traditional financial groups like ajo and esusu, while maintaining the privacy of monetary contributions. Contributions are settled privately, with only the participation and compliance data stored publicly, allowing members to prove their financial reputation without revealing their full financial history. The project is built using Starknet and the STRK20 privacy pool, ensuring that payment amounts and relationships are hidden while still providing verifiable records of member behavior.",
     "latest_push": "Rewrote the README to better describe the product.",
@@ -1010,6 +1116,7 @@
     "has_readme": true,
     "additions": 244,
     "deletions": 71,
+    "churn_pct": 0.6,
     "sprint": {
       "pushes": 25,
       "additions": 23250,
@@ -1133,7 +1240,6 @@
     "head_sha": "cb9ae643f43954851b7d978e00489370eae64748",
     "readme_hash": "9160ac126fccbd25",
     "desc_v6": true,
-    "churn_pct": 1.1,
     "summary": "A proof-carrying private payroll system for humans and AI agents.",
     "description_long": "PAYO is a non-custodial payroll workspace on Starknet that enables private payroll processes through encrypted pay agreements and integrity proofs. It handles private batches, recurrent payments, and selective disclosures using its core PayrollIntegrity ZK proof feature, with components including an Advanced Obligation Engine and a PayrollSeal contract for STRK and USDC payrolls.",
     "latest_push": "Prepared Phase 5 isolated signer cutover with updated documentation.",
@@ -1182,6 +1288,7 @@
     "has_readme": true,
     "additions": 1382,
     "deletions": 548,
+    "churn_pct": 1.1,
     "sprint": {
       "pushes": 99,
       "additions": 25505,
@@ -1289,7 +1396,6 @@
     "head_sha": "ff09fde58825b1d44d94205ed5cdbf339f2f37a5",
     "readme_hash": "5501aae0f6556768",
     "desc_v6": true,
-    "churn_pct": 12.3,
     "summary": "A private application launcher offering distinct identities for each app using one shielded balance.",
     "description_long": "Facet creates a private identity for each compatible application, separating public activity from funding sources. Built on STRK20 shadow accounts, it connects a shielded balance to application-specific accounts while maintaining privacy in transactions. The system includes helper contracts and allows users to maintain distinct identities without linking their activities, though it does not prevent all forms of correlation.",
     "latest_push": "Shipped the chain-backed portfolio launcher feature.",
@@ -1308,6 +1414,7 @@
     "has_readme": true,
     "additions": 1325,
     "deletions": 255,
+    "churn_pct": 12.3,
     "sprint": {
       "pushes": 122,
       "additions": 19849,
@@ -1422,113 +1529,6 @@
     },
     "assessment": null,
     "star_evidence": "Cairo in the repository"
-  },
-  {
-    "slug": "stake-wars",
-    "name": "stake-wars",
-    "one_liner": "",
-    "category": "Other",
-    "repo_url": "https://github.com/broody/stake-wars",
-    "demo_url": "https://stakewars.gg",
-    "demo_video": "https://assets.stakewars.gg/demo/strk20-hackathon-demo.mp4",
-    "x_handle": "",
-    "inspired_by": "",
-    "affiliation": "",
-    "starred": false,
-    "star_reason": "StakeWars lacks innovative privacy features and engineering depth.",
-    "contracts": [
-      {
-        "address": "0x07e50e2acad557379785d671d6dde25cde4e18714470b6619f764233cc12b509",
-        "network": "mainnet"
-      }
-    ],
-    "transactions": [
-      {
-        "hash": "0x02fcc3ef7b4068bc48387ae6b5fe967ae218e446d5bfc44c372fe8447da2caea",
-        "ok": true,
-        "pool": true,
-        "mine": true
-      },
-      {
-        "hash": "0x0571f6c1946da7d5247aad0cfc549cbb9633ec92338c938de2b8d54790c4819a",
-        "ok": true,
-        "pool": true,
-        "mine": true
-      },
-      {
-        "hash": "0x04b10fcdd0b5c2090d76cac4d040acdac3596e9c9abf52d866445e3702e5150a",
-        "ok": true,
-        "pool": true,
-        "mine": true
-      }
-    ],
-    "verified_txs": 3,
-    "requirements": {
-      "demo": true,
-      "video": true,
-      "mainnet": true
-    },
-    "status": "finished",
-    "pushed_at": "2026-09-01T06:46:19Z",
-    "stars": 0,
-    "builders": [
-      {
-        "login": "broody",
-        "name": "broody",
-        "avatar_url": "https://avatars.githubusercontent.com/u/610224?v=4"
-      }
-    ],
-    "agents": [],
-    "active_days": [
-      "2026-08-14",
-      "2026-08-15",
-      "2026-08-16",
-      "2026-08-17",
-      "2026-08-18",
-      "2026-08-19",
-      "2026-08-20",
-      "2026-08-21",
-      "2026-08-22",
-      "2026-08-25",
-      "2026-08-26",
-      "2026-08-27",
-      "2026-08-28",
-      "2026-08-30",
-      "2026-08-31",
-      "2026-09-01"
-    ],
-    "head_sha": "1eb73aa3cf163f96f48010a7fdb5f4b0c8e352b3",
-    "readme_hash": "52fdb47df86b9b82",
-    "desc_v6": true,
-    "summary": "A strategic game where players capture territory using delegated STRK.",
-    "description_long": "Stake Wars is a non-custodial strategy game that allows players to deploy delegated STRK as FORCE to capture and defend Sectors, challenge other players, and manage their strength visibility. The project consists of a web application, an API built with Go, and Cairo contracts. It integrates with the Whisper library for private auction mechanics and has a structured repository layout that includes separate directories for the API, front end, contracts, documentation, and third-party vendors.",
-    "latest_push": "Added one-shot arbiter advertisements and refined the arbiter billboard panel.",
-    "tooling": [
-      {
-        "label": "Cairo",
-        "live": false,
-        "stack": false
-      }
-    ],
-    "has_readme": true,
-    "additions": 2253,
-    "deletions": 1701,
-    "churn_pct": 12.8,
-    "sprint": {
-      "pushes": 113,
-      "additions": 38969,
-      "deletions": 698,
-      "computed": 3
-    },
-    "assessment": {
-      "innovative": false,
-      "complex": false,
-      "why_innovative": "This project operates as a game without unique private mechanisms.",
-      "why_complex": "There are no deployed contracts or complex Cairo implementations.",
-      "reason": "StakeWars lacks innovative privacy features and engineering depth.",
-      "facts_v2": true
-    },
-    "star_evidence": "1 contract deployed on mainnet, Cairo in the repository"
   },
   {
     "slug": "strk20-run",
