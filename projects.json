@@ -1,60 +1,5 @@
 [
   {
-    "slug": "musetub",
-    "name": "Musetub",
-    "one_liner": "Per-watch-time video streaming on Starknet: viewers pay USDC for seconds watched via x402, creators earn private STRK20 shielded payouts.",
-    "category": "Consumer",
-    "repo_url": "https://github.com/DavidIfebueme/musetub",
-    "demo_url": "",
-    "demo_video": "",
-    "x_handle": "",
-    "inspired_by": "",
-    "affiliation": "",
-    "starred": false,
-    "star_reason": "",
-    "contracts": [],
-    "transactions": [],
-    "verified_txs": 0,
-    "requirements": {
-      "demo": false,
-      "video": false,
-      "mainnet": false
-    },
-    "status": "building",
-    "pushed_at": "2026-09-01T12:18:19Z",
-    "stars": 0,
-    "builders": [
-      {
-        "login": "DavidIfebueme",
-        "name": "David Ifebueme",
-        "avatar_url": "https://avatars.githubusercontent.com/u/70243356?v=4"
-      }
-    ],
-    "agents": [],
-    "active_days": [
-      "2026-09-01"
-    ],
-    "head_sha": "ec586c048ca999e6085441212e9fd08f2ab811f8",
-    "readme_hash": "83036dedea52c79a",
-    "desc_v6": true,
-    "churn_pct": 0,
-    "summary": "A pay-per-watch video streaming service where creators earn from viewer watch-time.",
-    "description_long": "Musetub allows viewers to pay for the seconds they watch videos, similar to Twitch or Kick. It uses a payment handshake via x402 for gasless transactions, while watch-time is measured off-chain. Creator earnings are routed through the STRK20 privacy pool, ensuring that earnings and viewer watch history remain private.",
-    "latest_push": "Added agents.md with lowercase doc rules and repo conventions.",
-    "tooling": [],
-    "has_readme": true,
-    "additions": 75,
-    "deletions": 23,
-    "sprint": {
-      "pushes": 2,
-      "additions": 119,
-      "deletions": 23,
-      "computed": 3
-    },
-    "assessment": null,
-    "star_evidence": ""
-  },
-  {
     "slug": "veilzero",
     "name": "VeilZero",
     "one_liner": "Private coordinated vulnerability disclosure with deadline-bound cases and shielded STRK20 bounty settlement.",
@@ -76,7 +21,7 @@
       "mainnet": false
     },
     "status": "building",
-    "pushed_at": "2026-09-01T12:12:22Z",
+    "pushed_at": "2026-09-01T12:34:15Z",
     "stars": 0,
     "builders": [
       {
@@ -89,13 +34,13 @@
     "active_days": [
       "2026-09-01"
     ],
-    "head_sha": "9ea0e8449fab1a9cfaa7d63377a3b9350ab4b157",
-    "readme_hash": "9a309191a8224a8d",
+    "head_sha": "d78085f4ff7abec6baf0cbcc3eee8054f37a16a3",
+    "readme_hash": "bfa0614b47ec6e0e",
     "desc_v6": true,
-    "churn_pct": 48.5,
-    "summary": "Private vulnerability disclosure with encrypted reports and shielded bounty settlements.",
-    "description_long": "VeilZero allows researchers to disclose vulnerabilities privately, using encrypted reports and proof-of-authorship. It implements various features including X25519 envelope encryption, shareable case envelopes, domain-separated commitments, and a lifecycle for case management, all while interacting with the STRK20 pool for bounty settlements and privacy. The main components include a browser-based encryption system, a Cairo contract for managing submissions, and a recovery package export mechanism.",
-    "latest_push": "Fixed security by binding case authorization to encrypted envelopes.",
+    "churn_pct": 13.2,
+    "summary": "Private vulnerability disclosure with encrypted reports and STRK20 bounty settlement.",
+    "description_long": "VeilZero enables researchers to report vulnerabilities privately through encrypted communications, proof-of-authorship, and assured remediation timelines. It includes a suite of features such as domain-separated commitments, encrypted case envelopes, wallet discovery, and lifecycle management handled by Cairo contracts. The project integrates with the STRK20 pool, allowing for secure bounty settlements without exposing sensitive information on-chain.",
+    "latest_push": "Prepared destination-bound STRK20 claims for the wallet.",
     "tooling": [
       {
         "label": "get-starknet",
@@ -129,16 +74,71 @@
       }
     ],
     "has_readme": true,
-    "additions": 1100,
-    "deletions": 95,
+    "additions": 319,
+    "deletions": 44,
     "sprint": {
-      "pushes": 13,
-      "additions": 8623,
-      "deletions": 98,
+      "pushes": 15,
+      "additions": 8902,
+      "deletions": 102,
       "computed": 3
     },
     "assessment": null,
     "star_evidence": "Cairo in the repository"
+  },
+  {
+    "slug": "musetub",
+    "name": "Musetub",
+    "one_liner": "Per-watch-time video streaming on Starknet: viewers pay USDC for seconds watched via x402, creators earn private STRK20 shielded payouts.",
+    "category": "Consumer",
+    "repo_url": "https://github.com/DavidIfebueme/musetub",
+    "demo_url": "",
+    "demo_video": "",
+    "x_handle": "",
+    "inspired_by": "",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "",
+    "contracts": [],
+    "transactions": [],
+    "verified_txs": 0,
+    "requirements": {
+      "demo": false,
+      "video": false,
+      "mainnet": false
+    },
+    "status": "building",
+    "pushed_at": "2026-09-01T12:26:57Z",
+    "stars": 0,
+    "builders": [
+      {
+        "login": "DavidIfebueme",
+        "name": "David Ifebueme",
+        "avatar_url": "https://avatars.githubusercontent.com/u/70243356?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-09-01"
+    ],
+    "head_sha": "a782ac70ac72834ba6d1f1fc3f1271d29d9a8893",
+    "readme_hash": "039bd7c0eab94b6e",
+    "desc_v6": true,
+    "churn_pct": 0,
+    "summary": "Private video streaming where viewers pay for watch time",
+    "description_long": "Musetub allows viewers to pay for video streaming based on the time they watch. Using Starknet, transactions are executed to enable private, shielded payouts to creators in STRK20.",
+    "latest_push": "Completed the initial project setup for Musetub.",
+    "tooling": [],
+    "has_readme": true,
+    "additions": 94,
+    "deletions": 0,
+    "sprint": {
+      "pushes": 1,
+      "additions": 94,
+      "deletions": 0,
+      "computed": 3
+    },
+    "assessment": null,
+    "star_evidence": ""
   },
   {
     "slug": "private-payroll",
@@ -254,7 +254,6 @@
     "head_sha": "6b5085f8e997e015693ed26b8e4af8aef530ec9a",
     "readme_hash": "9160ac126fccbd25",
     "desc_v6": true,
-    "churn_pct": 0.8,
     "summary": "A proof-carrying private payroll system for humans and AI agents.",
     "description_long": "PAYO is a non-custodial payroll workspace on Starknet that enables private payroll processes through encrypted pay agreements and integrity proofs. It handles private batches, recurrent payments, and selective disclosures using its core PayrollIntegrity ZK proof feature, with components including an Advanced Obligation Engine and a PayrollSeal contract for STRK and USDC payrolls.",
     "latest_push": "Hardened the Phase 5 signer cutover and reviewed its activation.",
@@ -303,6 +302,7 @@
     "has_readme": true,
     "additions": 1238,
     "deletions": 123,
+    "churn_pct": 0.8,
     "sprint": {
       "pushes": 100,
       "additions": 25481,
@@ -472,7 +472,6 @@
     "head_sha": "ba2f4d1a7d983eb3cc272a7844dc952eb489230d",
     "readme_hash": "a3d46036d2d40249",
     "desc_v6": true,
-    "churn_pct": 0.2,
     "summary": "A private deal room for encrypted negotiations, escrow, and settlement verification.",
     "description_long": "VINSS connects encrypted conversation, structured negotiation, escrow, fulfillment, settlement, and verifiable evidence in a continuous deal lifecycle. Built on Starknet, it uses client-side encryption for messaging and offer terms, integrating escrow settlement with a focus on privacy. The design protects sensitive commercial context while ensuring that the necessary public information remains verifiable.",
     "latest_push": "Removed legacy rooms and paymaster routes while adding security headers.",
@@ -486,6 +485,7 @@
     "has_readme": true,
     "additions": 43,
     "deletions": 44,
+    "churn_pct": 0.2,
     "sprint": {
       "pushes": 227,
       "additions": 33972,
@@ -628,7 +628,6 @@
     "head_sha": "005162f267ea9aca7d6f6153b9bceb0fd400b9a3",
     "readme_hash": "a0a6e424acf999d6",
     "desc_v6": true,
-    "churn_pct": 81.5,
     "summary": "A capability layer for STRK20 pool activity to redeem transferable, unlinkable passes.",
     "description_long": "Prova Pass lets users convert any provable fact about their public STRK20 pool activity into a transferable capability that can be redeemed by a different wallet. It validates this activity through a server attestation, generating a bearer token that acts on-chain and can carry real value, allowing the recipient to receive an ERC20 payout while maintaining unlinkability. Built as a contract on the live mainnet, Prova Pass features multiple campaigns, including options for new wallets to participate without any prior deposit history.",
     "latest_push": "Removed AI-tooling and video-production files not relevant to users.",
@@ -672,6 +671,7 @@
     "has_readme": true,
     "additions": 3,
     "deletions": 5370,
+    "churn_pct": 81.5,
     "sprint": {
       "pushes": 87,
       "additions": 229541,
@@ -680,6 +680,83 @@
     },
     "assessment": null,
     "star_evidence": "2 contracts deployed on mainnet, Cairo in the repository"
+  },
+  {
+    "slug": "cairobot",
+    "name": "CairoBot",
+    "one_liner": "Private perps on Extended, from chat, CLI, or an agent.",
+    "category": "DeFi",
+    "repo_url": "https://github.com/Alajemba-Paul/CairoBot",
+    "demo_url": "https://cairobot.vercel.app",
+    "demo_video": "",
+    "x_handle": "realpauldpundit",
+    "inspired_by": "IDEA-02",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "",
+    "contracts": [],
+    "transactions": [],
+    "verified_txs": 0,
+    "requirements": {
+      "demo": true,
+      "video": false,
+      "mainnet": false
+    },
+    "status": "building",
+    "pushed_at": "2026-09-01T11:45:57Z",
+    "stars": 2,
+    "builders": [
+      {
+        "login": "Alajemba-Paul",
+        "name": "Alajemba Paul",
+        "avatar_url": "https://avatars.githubusercontent.com/u/100224975?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-08-31",
+      "2026-09-01"
+    ],
+    "head_sha": "bba023b93fd9df6ad29913e4342fb665ea9f34eb",
+    "readme_hash": "4d931c1f80ad0ef3",
+    "desc_v6": true,
+    "churn_pct": 45,
+    "summary": "Private perpetual trading via Telegram, CLI, or an agent.",
+    "description_long": "CairoBot enables private perpetual trading on the Extended network with support for Telegram, CLI, or MCP interfaces. It connects to the live STRK20 pool for collateral, while keeping user identities off-chain. The core features include intent previews, trade confirmations, position listings, and a privacy status check, all integrated with a MarginRouter that manages collateral funds.",
+    "latest_push": "Added STRK20 sprint setup with scorer-safe strk20.json and skills.",
+    "tooling": [
+      {
+        "label": "React",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "TypeScript",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Vite",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 5250,
+    "deletions": 32,
+    "sprint": {
+      "pushes": 5,
+      "additions": 22492,
+      "deletions": 8037,
+      "computed": 3
+    },
+    "assessment": null,
+    "star_evidence": "Cairo in the repository"
   },
   {
     "slug": "ghoste-starknet",
@@ -865,7 +942,6 @@
     "head_sha": "6233461c1a065993bf255d632da55c1f819d7614",
     "readme_hash": "92945918c049d13f",
     "desc_v6": true,
-    "churn_pct": 1.3,
     "summary": "Encrypted negotiation and settlement infrastructure for AI agents.",
     "description_long": "Erebus is a system for AI agents to negotiate and settle transactions privately, using encrypted channels and a shielded-settlement mechanism. It includes features such as atomic transaction settlement, selective disclosure for deal terms, and supports agent autonomy through account abstraction on Starknet. Built on Protocol 4, it handles message encryption with AES-256-GCM-SIV and stores negotiation data in a way that preserves privacy while remaining transparent to the blockchain.",
     "latest_push": "Updated the documentation runbook and related files.",
@@ -884,6 +960,7 @@
     "has_readme": true,
     "additions": 211,
     "deletions": 265,
+    "churn_pct": 1.3,
     "sprint": {
       "pushes": 111,
       "additions": 13935,
