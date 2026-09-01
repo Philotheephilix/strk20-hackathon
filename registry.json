@@ -1735,5 +1735,11 @@
     ],
     "x_handle": "masterpiece_eth",
     "inspired_by": "IDEA-16"
+  },
+  {
+    "repo_url": "https://github.com/Eric-65/holographic-agent-marketplace",
+    "telegram": [
+      "eric0xbt"
+    ]
   }
 ]
