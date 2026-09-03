@@ -1,5 +1,114 @@
 [
   {
+    "slug": "nomos",
+    "name": "Nomos",
+    "one_liner": "A private payment gateway for Starknet: businesses that already accept stablecoins integrate once and get several ways to take money, shielded and settled on mainnet through the STRK20 pool.",
+    "category": "Payments",
+    "repo_url": "https://github.com/wheval/nomos",
+    "demo_url": "https://nomos-henna.vercel.app",
+    "demo_video": "",
+    "x_handle": "",
+    "inspired_by": "IDEA-11",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "The project lacks any unique application of privacy technology.",
+    "contracts": [],
+    "transactions": [],
+    "verified_txs": 0,
+    "requirements": {
+      "demo": true,
+      "video": false,
+      "mainnet": false
+    },
+    "status": "building",
+    "pushed_at": "2026-09-03T00:33:40Z",
+    "stars": 1,
+    "builders": [
+      {
+        "login": "wheval",
+        "name": "wheval",
+        "avatar_url": "https://avatars.githubusercontent.com/u/179390421?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-08-16",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-30",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03"
+    ],
+    "head_sha": "bfc2149613d4b6e9ec75af16127b2dc3e0e69817",
+    "readme_hash": "d7091802c7521262",
+    "desc_v6": true,
+    "churn_pct": 100,
+    "summary": "A private payment gateway for businesses to accept shielded and public payments on Starknet.",
+    "description_long": "Nomos allows businesses to integrate a payment link or checkout widget for customers to pay via shielded or public wallets. The system is custodial, internally settling payments in an operating wallet before crediting merchant balances, and it includes a variety of features such as a customer checkout flow, transaction verification, a ledger for managing deposits and payouts, and a dashboard for managing API keys and payment history. It is built using Next.js, React, TypeScript, and starknet.js.",
+    "latest_push": "Added Checkout Sessions feature and enhanced the landing page layout.",
+    "tooling": [
+      {
+        "label": "get-starknet",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Privacy SDK",
+        "live": true,
+        "stack": true
+      },
+      {
+        "label": "Next.js",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "React",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "starknet.js",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "TypeScript",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 18775,
+    "deletions": 7779,
+    "sprint": {
+      "pushes": 77,
+      "additions": 36842,
+      "deletions": 385,
+      "computed": 3
+    },
+    "assessment": {
+      "innovative": false,
+      "complex": false,
+      "why_innovative": "The project is a private payment gateway, similar in concept to existing private transfer applications.",
+      "why_complex": "There are no deployed contracts to assess engineering complexity.",
+      "reason": "The project lacks any unique application of privacy technology.",
+      "facts_v2": true
+    },
+    "star_evidence": "Cairo in the repository"
+  },
+  {
     "slug": "private-payroll",
     "name": "Private Payroll",
     "one_liner": "Private payroll and treasury disbursements on Starknet without exposing employee salaries or linking recipients to the company treasury.",
@@ -59,7 +168,7 @@
       },
       {
         "address": "0x656928a6f3aeb62c2e62ff7457d351a41ed987ceed07c514539165662ecb7e0",
-        "network": "unknown"
+        "network": "mainnet"
       }
     ],
     "transactions": [
@@ -118,7 +227,7 @@
     "churn_pct": 0.1,
     "summary": "A proof-carrying private payroll system for humans and AI agents.",
     "description_long": "PAYO is a non-custodial payroll workspace on Starknet that enables private payroll processes through encrypted pay agreements and integrity proofs. It handles private batches, recurrent payments, and selective disclosures using its core PayrollIntegrity ZK proof feature, with components including an Advanced Obligation Engine and a PayrollSeal contract for STRK and USDC payrolls.",
-    "latest_push": "Fixed autonomous private recipient discovery issue.",
+    "latest_push": "Fixed autonomous private recipient discovery.",
     "tooling": [
       {
         "label": "get-starknet",
@@ -171,7 +280,7 @@
       "computed": 3
     },
     "assessment": null,
-    "star_evidence": "11 contracts deployed on mainnet, Cairo in the repository"
+    "star_evidence": "12 contracts deployed on mainnet, Cairo in the repository"
   },
   {
     "slug": "sage",
@@ -274,7 +383,7 @@
     "churn_pct": 0.6,
     "summary": "An AI agent that autonomously tests products and pays testers in USDC while maintaining privacy.",
     "description_long": "Sage is an AI-driven agent that evaluates human work related to product testing and autonomously manages payouts in USDC without manual intervention. Built on Starknet, it includes contracts like `SageClaims`, which escrow payments behind a Poseidon commitment, and `SageVault`, which handles the settlement amounts while ensuring privacy for the recipients. The agent operates with two main human inputs: approving the testing plan and funding it, while all other actions, including the rejection of inadequate submissions, are automated.",
-    "latest_push": "Added self-serve working capital and enabled gig submissions revisions.",
+    "latest_push": "Implemented self-serve working capital on worker record pages.",
     "tooling": [
       {
         "label": "get-starknet",
@@ -358,9 +467,9 @@
     "readme_hash": "6679a96df5ae0ade",
     "desc_v6": true,
     "churn_pct": 0,
-    "summary": "Transforms bug screen recordings into verified fixes while ensuring privacy.",
-    "description_long": "Turns bug screen recordings into verified fixes while keeping the recording and QA data private. It uses STRK20 encrypted storage on Starknet for secure data handling.",
-    "latest_push": "Added README and strk20.json for registration.",
+    "summary": "Converts bug screen-recordings into verified fixes while maintaining privacy.",
+    "description_long": "Turns screen-recordings of bugs into verified patches while ensuring that the recordings and QA data remain private using STRK20 encrypted storage on Starknet. The system securely handles video submissions and verification, integrating with existing software development workflows.",
+    "latest_push": "Initialized the project with README and strk20.json for registration.",
     "tooling": [],
     "has_readme": true,
     "additions": 14,
@@ -440,7 +549,7 @@
     "churn_pct": 5.6,
     "summary": "Private token vesting with sender and recipient anonymity.",
     "description_long": "Nagare implements token vesting on Starknet, allowing a sender to fund a lockup from a shielded STRK20 balance while concealing both parties' wallet addresses. It uses Stark-curve public keys for sender and recipient, ensuring that every transaction is recorded with signatures bound to the associated schedule, token amounts, and timing, without exposing any wallet addresses. The contracts support various operations including creating schedules, withdrawals, and transfers, all executed as private transactions with a fee taken from the sender's shielded balance.",
-    "latest_push": "Derived schedule keys from the wallet in multiple files.",
+    "latest_push": "Derived schedule keys from the wallet in multiple components.",
     "tooling": [
       {
         "label": "Cairo",
@@ -469,115 +578,6 @@
     },
     "assessment": null,
     "star_evidence": "1 contract deployed on mainnet, Cairo in the repository"
-  },
-  {
-    "slug": "nomos",
-    "name": "Nomos",
-    "one_liner": "A private payment gateway for Starknet: businesses that already accept stablecoins integrate once and get several ways to take money, shielded and settled on mainnet through the STRK20 pool.",
-    "category": "Payments",
-    "repo_url": "https://github.com/wheval/nomos",
-    "demo_url": "https://nomos-henna.vercel.app",
-    "demo_video": "",
-    "x_handle": "",
-    "inspired_by": "IDEA-11",
-    "affiliation": "",
-    "starred": false,
-    "star_reason": "The project lacks any unique application of privacy technology.",
-    "contracts": [],
-    "transactions": [],
-    "verified_txs": 0,
-    "requirements": {
-      "demo": true,
-      "video": false,
-      "mainnet": false
-    },
-    "status": "building",
-    "pushed_at": "2026-09-03T00:05:57Z",
-    "stars": 1,
-    "builders": [
-      {
-        "login": "wheval",
-        "name": "wheval",
-        "avatar_url": "https://avatars.githubusercontent.com/u/179390421?v=4"
-      }
-    ],
-    "agents": [],
-    "active_days": [
-      "2026-08-16",
-      "2026-08-18",
-      "2026-08-19",
-      "2026-08-20",
-      "2026-08-24",
-      "2026-08-25",
-      "2026-08-27",
-      "2026-08-28",
-      "2026-08-30",
-      "2026-09-01",
-      "2026-09-02",
-      "2026-09-03"
-    ],
-    "head_sha": "23f12b9bc931560b55bbd1263f8cbe9fab8d0f67",
-    "readme_hash": "d7091802c7521262",
-    "desc_v6": true,
-    "churn_pct": 9.6,
-    "summary": "A private payment gateway integrating shielded and public payment options.",
-    "description_long": "Nomos enables businesses to accept payments through a customizable checkout widget, allowing customers to pay with either a shielded wallet or a standard Starknet wallet. The payments settle through an operating wallet that maintains an internal ledger of merchant balances, facilitating both public and private transaction flows. The system operates on Starknet, using Next.js and TypeScript, with components for payment processing, verification, ledger management, and a customer-facing dashboard.",
-    "latest_push": "Implemented Checkout Sessions and modified the landing page layout.",
-    "tooling": [
-      {
-        "label": "get-starknet",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "Privacy SDK",
-        "live": true,
-        "stack": true
-      },
-      {
-        "label": "Next.js",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "React",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "starknet.js",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "TypeScript",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "Cairo",
-        "live": false,
-        "stack": false
-      }
-    ],
-    "has_readme": true,
-    "additions": 1509,
-    "deletions": 103,
-    "sprint": {
-      "pushes": 76,
-      "additions": 27251,
-      "deletions": 384,
-      "computed": 3
-    },
-    "assessment": {
-      "innovative": false,
-      "complex": false,
-      "why_innovative": "The project is a private payment gateway, similar in concept to existing private transfer applications.",
-      "why_complex": "There are no deployed contracts to assess engineering complexity.",
-      "reason": "The project lacks any unique application of privacy technology.",
-      "facts_v2": true
-    },
-    "star_evidence": "Cairo in the repository"
   },
   {
     "slug": "stableroll",
@@ -889,7 +889,7 @@
     "churn_pct": 0.2,
     "summary": "Savings circles that keep contributions private while tracking member reliability.",
     "description_long": "Iwa enables users to save together in rotating circles similar to traditional financial groups like ajo and esusu, while maintaining the privacy of monetary contributions. Contributions are settled privately, with only the participation and compliance data stored publicly, allowing members to prove their financial reputation without revealing their full financial history. The project is built using Starknet and the STRK20 privacy pool, ensuring that payment amounts and relationships are hidden while still providing verifiable records of member behavior.",
-    "latest_push": "Stabilized the backend test suite and updated the Vitest configuration.",
+    "latest_push": "Stabilized the backend test suite for API interactions.",
     "tooling": [
       {
         "label": "Cairo",
@@ -1678,7 +1678,7 @@
     "churn_pct": 2.9,
     "summary": "",
     "description_long": "",
-    "latest_push": "Implemented AuditRegistry and PayrollAnonymizer contracts with deployment script.",
+    "latest_push": "Implemented AuditRegistry and PayrollAnonymizer contracts with a deployment script.",
     "tooling": [
       {
         "label": "Privacy SDK",
