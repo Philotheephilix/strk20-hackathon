@@ -1,5 +1,230 @@
 [
   {
+    "slug": "sole",
+    "name": "sole",
+    "one_liner": "",
+    "category": "Other",
+    "repo_url": "https://github.com/TheWeirdDee/sole",
+    "demo_url": "",
+    "demo_video": "",
+    "x_handle": "",
+    "inspired_by": "",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "",
+    "contracts": [],
+    "transactions": [],
+    "verified_txs": 0,
+    "requirements": {
+      "demo": false,
+      "video": false,
+      "mainnet": false
+    },
+    "status": "building",
+    "pushed_at": "2026-09-03T20:52:35Z",
+    "stars": 0,
+    "builders": [
+      {
+        "login": "TheWeirdDee",
+        "name": "TheWeirdDee",
+        "avatar_url": "https://avatars.githubusercontent.com/u/125990615?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-09-03"
+    ],
+    "head_sha": "0dc4cc679faa4bd8c66243ff87215d84c2c8a563",
+    "readme_hash": "01263ba5a1c08e6c",
+    "desc_v6": true,
+    "churn_pct": 100,
+    "summary": "A privacy-preserving exclusivity protocol for managing economic rights.",
+    "description_long": "Sole allows economic rights to be claimed in a way that hides the identities and relationships behind those rights while maintaining a publicly verifiable state. It uses a combination of Poseidon hash functions for generating unique identifiers, private commitments for ownership, and a double-spend primitive for consuming claims, all built on Starknet. The repository includes smart contracts for the rights registry, an anonymizer for claimants, an SDK, and a demo application to demonstrate the full lifecycle of rights management.",
+    "latest_push": "Set up Sole monorepo scaffold for STRK20 Private Sprint.",
+    "tooling": [
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Starknet Foundry",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 3492,
+    "deletions": 5344,
+    "sprint": {
+      "pushes": 4,
+      "additions": 10582,
+      "deletions": 5344,
+      "computed": 3
+    },
+    "assessment": null,
+    "star_evidence": "Cairo in the repository"
+  },
+  {
+    "slug": "erebus",
+    "name": "Erebus",
+    "one_liner": "",
+    "category": "Other",
+    "repo_url": "https://github.com/PoulavBhowmick03/Erebus",
+    "demo_url": "https://erebus-private-agents.vercel.app",
+    "demo_video": "https://erebus-private-agents.vercel.app/erebus-private-sprint.mp4",
+    "x_handle": "",
+    "inspired_by": "",
+    "affiliation": "",
+    "starred": false,
+    "star_reason": "Erebus enables privacy in autonomous agent transactions with novel encrypted negotiation.",
+    "contracts": [],
+    "transactions": [
+      {
+        "hash": "0x06597adb6581bb1910d30b31139fe871665db4cc61fefef8120b89773528e54c",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x0572260b651525ea39ef717721bcc9fefc89a2087894654efb38111e09267189",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x0159748de29d9dbe7016c9eb37459cbd7dd72290c3bc22412a034fb1c4c38a99",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x01a30c0b6e8db645df67795f2356cb6a251b9680d0b61cea54d28d04edd70d1",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x05a287657f829a82ecc83a0543674f1397aa75bdade8365b28f72e3925d759b5",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x04126a3ee0971728d7181296fe4d128f12fc6a828a172b7bd12d8f5128364923",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x072adebfcffdfd45bba66d2152c7e11b50107aa0fe2b4c9f1ea851da16ab6c6d",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x0273b0f97f1c0707a259bbe5cacc337df6876509adba09b7376a0501a0f028b7",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x051fa13c6d11c529208785af163f2d5bc1cc95451192e3265150e0067aadeda4",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      },
+      {
+        "hash": "0x06e55194809fec58c1426a8178dcdb10270d5e8aecfcfd6db2b28f6284ce5467",
+        "ok": true,
+        "pool": true,
+        "mine": null
+      }
+    ],
+    "verified_txs": 10,
+    "requirements": {
+      "demo": true,
+      "video": true,
+      "mainnet": true
+    },
+    "status": "finished",
+    "pushed_at": "2026-09-03T20:42:47Z",
+    "stars": 2,
+    "builders": [
+      {
+        "login": "PoulavBhowmick03",
+        "name": "PoulavBhowmick03",
+        "avatar_url": "https://avatars.githubusercontent.com/u/133862694?v=4"
+      },
+      {
+        "login": "ishitab02",
+        "name": "ishitab02",
+        "avatar_url": "https://avatars.githubusercontent.com/u/139248026?v=4"
+      }
+    ],
+    "agents": [],
+    "active_days": [
+      "2026-08-14",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03"
+    ],
+    "head_sha": "ffbc9cbb00129c058e860cb0307f470d23ff6653",
+    "readme_hash": "92945918c049d13f",
+    "desc_v6": true,
+    "churn_pct": 0,
+    "summary": "Encrypted negotiation and settlement infrastructure for AI agents.",
+    "description_long": "Erebus is a system for AI agents to negotiate and settle transactions privately, using encrypted channels and a shielded-settlement mechanism. It includes features such as atomic transaction settlement, selective disclosure for deal terms, and supports agent autonomy through account abstraction on Starknet. Built on Protocol 4, it handles message encryption with AES-256-GCM-SIV and stores negotiation data in a way that preserves privacy while remaining transparent to the blockchain.",
+    "latest_push": "Disabled the unusable sparse-canary cache in the canary.yml file.",
+    "tooling": [
+      {
+        "label": "Cairo",
+        "live": false,
+        "stack": false
+      },
+      {
+        "label": "Rust",
+        "live": false,
+        "stack": false
+      }
+    ],
+    "has_readme": true,
+    "additions": 4,
+    "deletions": 0,
+    "sprint": {
+      "pushes": 116,
+      "additions": 13999,
+      "deletions": 3646,
+      "computed": 3
+    },
+    "assessment": {
+      "innovative": true,
+      "complex": true,
+      "why_innovative": "applies privacy to agent-to-agent commerce using encrypted negotiation channels.",
+      "why_complex": "implements AES-256-GCM-SIV for wire v2 and includes multiple interacting agents and roles.",
+      "reason": "Erebus enables privacy in autonomous agent transactions with novel encrypted negotiation.",
+      "facts_v2": true
+    },
+    "star_evidence": "Cairo in the repository"
+  },
+  {
     "slug": "stealth-checkout",
     "name": "Stealth Checkout",
     "one_liner": "Accept private payments on Starknet: drop-in checkout widget, hosted invoices, webhook confirmations, honest privacy receipts.",
@@ -101,7 +326,6 @@
     "head_sha": "07e7d182571c39a5d5644adb5d5f7234cf131850",
     "readme_hash": "b58d66946f70651f",
     "desc_v6": true,
-    "churn_pct": 0,
     "summary": "Accept private payments with a drop-in checkout widget and hosted invoices.",
     "description_long": "Stealth Checkout enables merchants to accept private payments on Starknet through an embeddable payment widget, hosted invoice links, a merchant dashboard for invoice management, and webhook confirmations. It includes a payment flow that connects, checks balance, processes payments, and generates receipts, along with features like dynamic and static QR codes, and an honesty panel to inform payers about what their transactions reveal.",
     "latest_push": "Updated the PROGRESS.md file to reflect the latest changes.",
@@ -115,6 +339,7 @@
     "has_readme": true,
     "additions": 3,
     "deletions": 1,
+    "churn_pct": 0,
     "sprint": {
       "pushes": 93,
       "additions": 53478,
@@ -218,7 +443,6 @@
     "head_sha": "d81309dfa5050e30afbd56141f94471832204fd7",
     "readme_hash": "21fbed74387172a2",
     "desc_v6": true,
-    "churn_pct": 1.9,
     "summary": "A self-custodial Starknet privacy wallet with multiple wallet features.",
     "description_long": "Orrange is a Starknet privacy wallet that generates and encrypts keys locally, supporting Ready and Braavos accounts. It includes features for creating, importing, and managing wallets, executing public and private transactions, and an AI private treasury agent. Core components include wallet runtime, privacy session management, and integration with the STRK20 privacy SDK.",
     "latest_push": "Added Wallet Core private execution primitive and shadow-account execution.",
@@ -267,6 +491,7 @@
     "has_readme": true,
     "additions": 2979,
     "deletions": 429,
+    "churn_pct": 1.9,
     "sprint": {
       "pushes": 201,
       "additions": 20181,
@@ -321,7 +546,6 @@
     "head_sha": "cb4ceecccaa87c4a0e681a381b29544cf3927c57",
     "readme_hash": "5039c8bbe4e7e278",
     "desc_v6": true,
-    "churn_pct": 41.8,
     "summary": "A trading and liquidity web app for Zylith.",
     "description_long": "",
     "latest_push": "Modified the liquidity module and updated multiple related files.",
@@ -360,6 +584,7 @@
     "has_readme": true,
     "additions": 16622,
     "deletions": 9934,
+    "churn_pct": 41.8,
     "sprint": {
       "pushes": 1,
       "additions": 16622,
@@ -474,7 +699,6 @@
     "head_sha": "d74dcfa91746399f968e7eefb3d84cbb386383fc",
     "readme_hash": "35fd1246d672e795",
     "desc_v6": true,
-    "churn_pct": 0.5,
     "summary": "An AI agent automates payment for verified work without requiring users to hold crypto wallets.",
     "description_long": "Sage is a system where an AI agent assesses work quality, releases payments in USDC from a vault it cannot exceed, and maintains the privacy of recipients. It integrates contracts like `SageClaims` for escrow and `SageVault` for settlement, ensuring that the budget is controlled and cannot be withdrawn directly by the agent. The workflow involves minimal human intervention for plan approval and funding, while the agent autonomously handles judgment and payment execution.",
     "latest_push": "Added the settling lane and wallet graph components to the live app.",
@@ -513,6 +737,7 @@
     "has_readme": true,
     "additions": 987,
     "deletions": 37,
+    "churn_pct": 0.5,
     "sprint": {
       "pushes": 552,
       "additions": 30355,
@@ -593,7 +818,6 @@
     "head_sha": "ff9842f1c1ad98436c7b60bfc27e1f9cf2cef226",
     "readme_hash": "87791ebaeb8b9cfb",
     "desc_v6": true,
-    "churn_pct": 22.7,
     "summary": "Privacy-first merchant checkout with public and shielded payout options.",
     "description_long": "PhantomPay enables customers to pay from a shielded balance, allowing merchants to choose between receiving payments publicly or privately. The system is built on Starknet, employing components to ensure that the relationship between the customer and merchant remains confidential, while providing mechanisms for both public and shielded payouts, each with distinct levels of verification and privacy. The contracts ensure that transactions are verifiable through on-chain events without compromising user identities.",
     "latest_push": "Finalized PhantomPay functionality for the STRK20 hackathon.",
@@ -627,6 +851,7 @@
     "has_readme": true,
     "additions": 2116,
     "deletions": 152,
+    "churn_pct": 22.7,
     "sprint": {
       "pushes": 4,
       "additions": 13278,
@@ -692,7 +917,6 @@
     "head_sha": "19f99cde8cbd59b26d0e9852b2e1887e8639088c",
     "readme_hash": "1fdccd5cfc7c550e",
     "desc_v6": true,
-    "churn_pct": 10.3,
     "summary": "Create a persistent identity and connect accounts across chains.",
     "description_long": "Prism is a Starknet-native identity and financial coordination protocol that anchors identity on Starknet with a persistent Prism ID. It allows users to connect execution accounts on Base and perform financial actions while maintaining privacy through STRK20. Key features include the creation of a Prism ID, account control proof, and a unified interface to display financial states across Starknet and Base.",
     "latest_push": "Added truthful privacy invoke test surface and defined its configuration.",
@@ -731,6 +955,7 @@
     "has_readme": true,
     "additions": 9499,
     "deletions": 473,
+    "churn_pct": 10.3,
     "sprint": {
       "pushes": 284,
       "additions": 19752,
@@ -788,7 +1013,6 @@
     "head_sha": "847d191a747fa67aa89c439c39242bf1c5496f83",
     "readme_hash": "78f0886b670d09d6",
     "desc_v6": true,
-    "churn_pct": 2.8,
     "summary": "An emissions protocol that pays depositors to deepen the STRK20 anonymity set.",
     "description_long": "Himitsu Protocol incentivizes users to strengthen the anonymity of the STRK20 pool by rewarding deposits at standard denominations based on their depth. It operates by pooling rewards in a way that aligns financial incentives with the need for larger anonymity sets, using mechanisms like denomination gauges and shielded rewards to ensure that participants can claim their rewards privately. The system is built on Starknet with the contracts focusing on public deposit tracking, private claim processing, and transparent reward allocation via a merkle root.",
     "latest_push": "Created the qualify.sh orchestrator and added on-chain step detection.",
@@ -807,6 +1031,7 @@
     "has_readme": true,
     "additions": 458,
     "deletions": 4,
+    "churn_pct": 2.8,
     "sprint": {
       "pushes": 30,
       "additions": 28890,
@@ -954,7 +1179,6 @@
     "head_sha": "20b6e06fc60103906a11aa9e2039f75130eff20f",
     "readme_hash": "eba133384f520ca6",
     "desc_v6": true,
-    "churn_pct": 9.5,
     "summary": "A private account for sending value, trading, launching, and voting on Starknet.",
     "description_long": "The application allows users to manage shielded value, send payments with attached messages, swap assets, bridge to other networks, place bets, launch projects, and participate in governance through private houses. It generates a key in the browser on first load, and all actions are conducted from that key, with transparency about what is visible to others before any action is taken.",
     "latest_push": "Restored Chat functionality alongside Mail and enabled earnings for shielded USDC.",
@@ -988,6 +1212,7 @@
     "has_readme": true,
     "additions": 7402,
     "deletions": 562,
+    "churn_pct": 9.5,
     "sprint": {
       "pushes": 251,
       "additions": 8836,
@@ -1083,7 +1308,6 @@
     "head_sha": "fdf74f1289d72c19ba6cf8b5267e8602401b2a8f",
     "readme_hash": "db963a803a912a69",
     "desc_v6": true,
-    "churn_pct": 4.7,
     "summary": "A private recovery reserve for self-custody wallets on Starknet.",
     "description_long": "Afterlight allows owners to set up a fixed reserve for self-custody wallets, managing recovery through heartbeat authentication and a veto window. It is implemented with Cairo contracts, and features include private funding via STRK20, a neutral relayer for message signing, and an exact recovery process that links a designated successor key to a predetermined recovery destination.",
     "latest_push": "Hardened external recovery onboarding and selected a compatible Ready provider.",
@@ -1107,6 +1331,7 @@
     "has_readme": true,
     "additions": 752,
     "deletions": 135,
+    "churn_pct": 4.7,
     "sprint": {
       "pushes": 119,
       "additions": 43690,
@@ -1234,7 +1459,6 @@
     "head_sha": "8a5fc810861d2677ff635a25198056cb86b96cc4",
     "readme_hash": "dce4809a514fcfef",
     "desc_v6": true,
-    "churn_pct": 0.1,
     "summary": "A private application launcher creating unlinkable accounts for each app.",
     "description_long": "Facet is a private application launcher that enables users to have a distinct, persistent identity for each compatible application or strategy on Starknet, supported by a single shielded balance. It builds on the STRK20 shadow accounts primitive, allowing private transactions to fund deterministic accounts without revealing the user's identity, while still enabling app-specific actions and portfolio management.",
     "latest_push": "Published the SDK under the usefacet scope and added installation documentation.",
@@ -1253,6 +1477,7 @@
     "has_readme": true,
     "additions": 14,
     "deletions": 7,
+    "churn_pct": 0.1,
     "sprint": {
       "pushes": 131,
       "additions": 20144,
@@ -1396,7 +1621,6 @@
     "head_sha": "d8facd172c01066faa7a1df4f8bc06efb18a4e73",
     "readme_hash": "57b7135980d01ca3",
     "desc_v6": true,
-    "churn_pct": 2.9,
     "summary": "Private USDC donations with reusable QR codes for creators.",
     "description_long": "MorokPay allows creators to receive private USDC donations using a reusable QR code. Supporters can connect via Ready on Starknet or MetaMask, choose an amount, and confirm transfers that remain within the STRK20 pool, keeping amounts and sender details confidential. The app includes features like shielding USDC, deriving Starknet accounts from MetaMask, and handling transactions in a way that does not expose sensitive information.",
     "latest_push": "Enabled EVM claimers to collect from the escrow without STRK.",
@@ -1440,6 +1664,7 @@
     "has_readme": true,
     "additions": 584,
     "deletions": 114,
+    "churn_pct": 2.9,
     "sprint": {
       "pushes": 194,
       "additions": 26765,
@@ -1755,7 +1980,7 @@
       },
       {
         "address": "0x04cac02dcc7ca8c46c0b6f32985f17bf24d99557222e60c6881d147e13fafbbb",
-        "network": "unknown"
+        "network": "mainnet"
       }
     ],
     "transactions": [
@@ -1834,7 +2059,7 @@
       "computed": 3
     },
     "assessment": null,
-    "star_evidence": "1 contract deployed on mainnet, Cairo in the repository"
+    "star_evidence": "2 contracts deployed on mainnet, Cairo in the repository"
   },
   {
     "slug": "nomos",
@@ -2371,7 +2596,7 @@
     "churn_pct": 100,
     "summary": "",
     "description_long": "",
-    "latest_push": "Initialized Next.js web-ui dashboard and Starknet audit registry contract.",
+    "latest_push": "Initialized Next.js web application and implemented Starknet audit registry contracts.",
     "tooling": [
       {
         "label": "Privacy SDK",
@@ -4585,164 +4810,6 @@
     },
     "assessment": null,
     "star_evidence": "2 contracts deployed on mainnet, Cairo in the repository"
-  },
-  {
-    "slug": "erebus",
-    "name": "Erebus",
-    "one_liner": "",
-    "category": "Other",
-    "repo_url": "https://github.com/PoulavBhowmick03/Erebus",
-    "demo_url": "https://erebus-private-agents.vercel.app",
-    "demo_video": "https://erebus-private-agents.vercel.app/erebus-private-sprint.mp4",
-    "x_handle": "",
-    "inspired_by": "",
-    "affiliation": "",
-    "starred": false,
-    "star_reason": "Erebus enables privacy in autonomous agent transactions with novel encrypted negotiation.",
-    "contracts": [],
-    "transactions": [
-      {
-        "hash": "0x06597adb6581bb1910d30b31139fe871665db4cc61fefef8120b89773528e54c",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x0572260b651525ea39ef717721bcc9fefc89a2087894654efb38111e09267189",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x0159748de29d9dbe7016c9eb37459cbd7dd72290c3bc22412a034fb1c4c38a99",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x01a30c0b6e8db645df67795f2356cb6a251b9680d0b61cea54d28d04edd70d1",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x05a287657f829a82ecc83a0543674f1397aa75bdade8365b28f72e3925d759b5",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x04126a3ee0971728d7181296fe4d128f12fc6a828a172b7bd12d8f5128364923",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x072adebfcffdfd45bba66d2152c7e11b50107aa0fe2b4c9f1ea851da16ab6c6d",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x0273b0f97f1c0707a259bbe5cacc337df6876509adba09b7376a0501a0f028b7",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x051fa13c6d11c529208785af163f2d5bc1cc95451192e3265150e0067aadeda4",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      },
-      {
-        "hash": "0x06e55194809fec58c1426a8178dcdb10270d5e8aecfcfd6db2b28f6284ce5467",
-        "ok": true,
-        "pool": true,
-        "mine": null
-      }
-    ],
-    "verified_txs": 10,
-    "requirements": {
-      "demo": true,
-      "video": true,
-      "mainnet": true
-    },
-    "status": "finished",
-    "pushed_at": "2026-09-02T18:27:54Z",
-    "stars": 2,
-    "builders": [
-      {
-        "login": "PoulavBhowmick03",
-        "name": "PoulavBhowmick03",
-        "avatar_url": "https://avatars.githubusercontent.com/u/133862694?v=4"
-      },
-      {
-        "login": "ishitab02",
-        "name": "ishitab02",
-        "avatar_url": "https://avatars.githubusercontent.com/u/139248026?v=4"
-      }
-    ],
-    "agents": [],
-    "active_days": [
-      "2026-08-14",
-      "2026-08-15",
-      "2026-08-16",
-      "2026-08-17",
-      "2026-08-18",
-      "2026-08-19",
-      "2026-08-20",
-      "2026-08-21",
-      "2026-08-22",
-      "2026-08-23",
-      "2026-08-24",
-      "2026-08-25",
-      "2026-08-26",
-      "2026-08-27",
-      "2026-08-28",
-      "2026-08-29",
-      "2026-08-30",
-      "2026-08-31",
-      "2026-09-01",
-      "2026-09-02"
-    ],
-    "head_sha": "09cad29561c0015335c8a24488d8fd90d20cf329",
-    "readme_hash": "92945918c049d13f",
-    "desc_v6": true,
-    "summary": "Encrypted negotiation and settlement infrastructure for AI agents.",
-    "description_long": "Erebus is a system for AI agents to negotiate and settle transactions privately, using encrypted channels and a shielded-settlement mechanism. It includes features such as atomic transaction settlement, selective disclosure for deal terms, and supports agent autonomy through account abstraction on Starknet. Built on Protocol 4, it handles message encryption with AES-256-GCM-SIV and stores negotiation data in a way that preserves privacy while remaining transparent to the blockchain.",
-    "latest_push": "Fixed the observer wire version detection in the observer.py script.",
-    "tooling": [
-      {
-        "label": "Cairo",
-        "live": false,
-        "stack": false
-      },
-      {
-        "label": "Rust",
-        "live": false,
-        "stack": false
-      }
-    ],
-    "has_readme": true,
-    "additions": 95,
-    "deletions": 18,
-    "churn_pct": 0.3,
-    "sprint": {
-      "pushes": 115,
-      "additions": 13995,
-      "deletions": 3646,
-      "computed": 3
-    },
-    "assessment": {
-      "innovative": true,
-      "complex": true,
-      "why_innovative": "applies privacy to agent-to-agent commerce using encrypted negotiation channels.",
-      "why_complex": "implements AES-256-GCM-SIV for wire v2 and includes multiple interacting agents and roles.",
-      "reason": "Erebus enables privacy in autonomous agent transactions with novel encrypted negotiation.",
-      "facts_v2": true
-    },
-    "star_evidence": "Cairo in the repository"
   },
   {
     "slug": "jalin",
