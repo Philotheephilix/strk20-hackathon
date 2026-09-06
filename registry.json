@@ -1508,6 +1508,17 @@
       "philotheephilix"
     ],
     "name": "GhostCall",
-    "category": "Privacy"
+    "category": "Privacy",
+    "contracts": [
+      "0x474eafba0ef66427b796890bffc7d80fa9ec90359f649d85c1c54d50bd359fa"
+    ],
+    "transactions": [
+      "0x2a4bc1ffa34e8c78c0e9ef18b080054b1313c9f57ff72e8d87eee1ec3518c70",
+      "0x49944b36c6eaf03382ac7dcaf822692ea23ff78b5df868b136e4fac98f98128",
+      "0x6c7230e3000ca9ccc0f5ef7b45cefe8832d9bd8b4ec89f5100c4340e0fbe165",
+      "0x6a9a862a52296b774f605a6c2e63ccc27a6594f560e95529a86ead30f24f000",
+      "0x19bf52df1ba0a00ec76f511d8700bb5671828c5870c8a2327ffea3a5a626e28",
+      "0x1a1610e6174d980bc6bcb5956ff0b225f178b32a89449de50214a5388f5cdf1"
+    ]
   }
 ]
